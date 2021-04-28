@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
   }
   
   h1 {
@@ -15,6 +16,7 @@
     display: flex;
     flex-wrap:wrap;
     background-color: honeydew;
+    margin: 50px;
   }
   
   
@@ -40,12 +42,4 @@
     }
   }
   
-  .button {
-    
-    display: block;
-    width: 15%;
-    padding: 0.75rem;
-    color: black;
-    border-radius: 2px;
-      
-  }
+ 

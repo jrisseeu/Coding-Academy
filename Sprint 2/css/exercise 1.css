@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .flexboxRow {
+    display: flex;
+    flex-wrap:wrap;
+    background-color: honeydew;
+  }
+  
+  
+  /* Create four equal entries in myflexbox */
+  .flexboxColumn {
+    flex: 25%;
+    padding: 10px;
+    border-style: solid;
+    font-size: 25px;
+  }
+  
+  /* Media query - on screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .flexboxColumn {
+      flex: 33%;
+    }
+  }
+  
+  /* Media query - on screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .flexboxRow {
+      flex-direction: column;
+    }
+  }
+  
+  .button {
+    
+    display: block;
+    width: 15%;
+    padding: 0.75rem;
+    color: black;
+    border-radius: 2px;
+      
+  }

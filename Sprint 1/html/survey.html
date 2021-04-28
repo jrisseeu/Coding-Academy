@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Document</title>
+
+        <link rel="stylesheet" href="survey.css">
+
+        <script>
+            function myFunction() {
+                var newname = document.getElementById("name").value;
+                alert("Thank you " +newname + " for submitting your survey!");
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div class="container" >
+            <header class="header">
+                <h1 id="title" class="text-center">Sprint 1 Survey Form</h1>
+                <p id="description" class="description text-center">
+                  Thank you for taking the time to complete this form.
+                </p>
+              </header>
+        
+            <form id="survey-form" onsubmit="myFunction()">
+                <div class="form-group">
+                    <label id="name-label" for="name">What is your Name?</label>
+                    <input type="text" 
+                            id="name" 
+                            name="name" 
+                            required/>
+                </div>    
+                                        
+                <div class="form-group">
+                    <p>Which option is your favorite outdoor activity?</p>
+                    <select id="dropdown" >
+                            <option disabled selected value>Select your favorite outdoor activity</option>
+                            <option value="biking">Biking</option>
+                            <option value="boating">Boating</option>
+                            <option value="snowski">Snow Skiing</option>
+                            <option value="hiking">Hiking</option>
+                            <option value="softball">Softball / Baseball</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                    </select>
+                </div>
+                    
+                <div class="form-group">
+                    <p>What is your favorite season?</p> 
+                    <label>
+                        <input type="radio" id="spring" name="spring" value="spring" />Spring</label>
+                    <label>
+                        <input type="radio" id="summer" name="summer" value="summer" />Summer</label>
+                    <label>
+                        <input type="radio" id="fall" name="fall" value="fall" />Fall</label>
+                    <label>
+                        <input type="radio" id="winter" name="winter" value="winter" />Winter</label>
+                </div>
+                    
+
+                <div class="form-group">
+                    <p>What is your favorite vacation state?</p>
+                        <label>
+                            <input type="checkbox" id="state1" name="state1" value="Colorado" /> Colorado</label>
+                        
+                        <label>
+                            <input type="checkbox" id="state2" name="state2" value="California" />California</label>
+                        
+                        <label>
+                            <input type="checkbox" id="state3" name="state3" value="New York" /> New York</label>
+                        
+                        <label>
+                            <input type="checkbox" id="state4" name="state4" value="Florida" /> Florida</label>
+                        
+                        <label>
+                            <input type="checkbox" id="state5" name="state5" value="None" /> None of these</label>
+                        
+                </div>
+
+                <div class="form-group">
+                    <p>Do you have any comments or suggestions?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comments here please..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+                
+
+            </form>
+    </div>
+    </body>
+</html>

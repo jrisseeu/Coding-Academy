@@ -1,0 +1,25 @@
+body {
+    background-color: lightsteelblue;
+}
+
+h1 {
+    color: honeydew;
+    font-size: 50px;
+    margin-left: 45px;
+}
+
+p {
+    color: crimson;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+button {
+      color: blue;
+      background-color: papayawhip;
+}
+
+label {
+    font-weight: bold;
+    font-size: 25px;
+}

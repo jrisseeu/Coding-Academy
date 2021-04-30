@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call Exercise</title>
+
+    <link rel="stylesheet" href="../css/exercise 1.css">
+    <script src="../js/exercise 1.js"> </script>
+
+</head>
+  <body>
+    <h1>API Call & Response Exercise</h1>
+  
+    <div class="flexboxRow">
+      <div class="flexboxColumn">
+        <p></p>
+        <label for="paras">How many paragraphs?</label>
+            <select name="paras" id="paras">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+        <br>
+        <input  type="button" value="Get Meat" onclick="weHaveTheMeat()">
+        
+      </div>
+
+      <div class="flexboxColumn">
+        <h3>JSON Response</h3>
+        
+        <p id="jsonResp"> </p>
+        
+        
+      </div>
+
+      <div class="flexboxColumn">
+        <h3>Formatted JSON Text Response</h3>
+        <p id="formatJson"></p>
+      </div>
+      
+    </div>
+    </body>
+</html>

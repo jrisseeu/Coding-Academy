@@ -5,31 +5,33 @@ function validateEntry() {
    
           
     if (!validateNumber(min)) {
-        alert("Please enter a starting number thta is > 0");
+        alert("Please enter a starting number that is > 0");
         return false;
     } 
 
 
     if (!validateNumber(max)) {
-        alert("Please enter a maximum number that is >");
+        alert("Please enter a maximum number that is > 0" );
         return false;
     } 
 
-    if (Number(theNumber) <= Number(min)) {
-         alert("Number entered has has to be > " + min );
+    if (Number(theNumber) < Number(min)) {
+         alert("Number entered has has to be >= " + min );
          return false;
     } 
 
-    if (Number(theNumber) >= Number(max)) {
-        alert("Number entered has has to be < " +max);
+    if (Number(theNumber) > Number(max)) {
+        alert("Number entered has has to be <= " +max);
         return false;
    } 
+
+   //disable the buttons so the user cannot enter any changes
+   document.getElementById("minNumber").disabled = true;
+   document.getElementById("maxNumber").disabled = true;
 
     var table1 = document.getElementById("list1");
     table1.insertRow(table1.rows.length).innerHTML = theNumber;
     
-   
-
     document.getElementById("mean").innerHTML = getMean(table1);
     document.getElementById("median").innerHTML = getMedian(table1);
     document.getElementById("modes").innerHTML = getTheMode(table1);
@@ -72,26 +74,6 @@ function getTheMode(x) {
     return modes.toString();
   }
 
-function getMode(x) {
-
-    if (x.rows.length == 1) {
-        return parseInt((x.rows[0]).innerHTML);
-    }
-
-    var numsCnt = x.rows.length;
-    var array = [];
-    for (i=0; i < numsCnt; i++) {
-     array.push((x.rows[i]).innerHTML);
-    }
-
-}
-
-function simpleMode(array) { 
-
-    return 1222;
-}
-
-
 function getMedian(x) {
 
     if (x.rows.length == 1) {
@@ -104,6 +86,7 @@ function getMedian(x) {
      array.push((x.rows[i]).innerHTML);
     }
 
+    //Not sure how this works, but W3 used this to sort numerically
     array.sort(function(a, b){return a - b});
     
     //Round the length down to the closest number 

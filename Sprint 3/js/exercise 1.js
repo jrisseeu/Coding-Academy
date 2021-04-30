@@ -4,7 +4,7 @@ async function weHaveTheMeat() {
     document.getElementById("formatJson").innerHTML = "";
     document.getElementById("jsonResp").innerHTML = "";
 
-    var apiUrl = "https://baconipsum.com/api/?type=all-meat&paras=" + numParas;
+    var apiUrl = "https://baconipsum.com/api/?type=meat&paras=" + numParas;
     
     var response = await fetch(apiUrl);
     var myObj = await response.json();

@@ -32,7 +32,7 @@ function validateEntry() {
 
     document.getElementById("mean").innerHTML = getMean(table1);
     document.getElementById("median").innerHTML = getMedian(table1);
-    document.getElementById("modes").innerHTML = simpleMode(table1);
+    document.getElementById("modes").innerHTML = getTheMode(table1);
 
     //Clear the number they enter for the next entry
     document.getElementById('theNumber').value = '';
@@ -40,6 +40,37 @@ function validateEntry() {
     return true;
    
 }
+
+function getTheMode(x) {
+    if (x.rows.length == 1) {
+        //return parseInt((x.rows[0]).innerHTML);
+        return (x.rows[0]).innerHTML;
+    }
+
+    var array = [];
+    for (a=0; a < x.rows.length; a++) {
+     array.push(x.rows[a].innerHTML);
+    }
+
+    var frequency = {}; // array of frequency.
+    var maxFreq = 0; // holds the max frequency.
+    var modes = [];
+  
+    for (var i in array) {
+      frequency[array[i]] = (frequency[array[i]] || 0) + 1; // increment frequency.
+      if (frequency[array[i]] > maxFreq) { // is this frequency > max so far ?
+        maxFreq = frequency[array[i]]; // update max.
+      }
+    }
+  
+    for (var k in frequency) {
+      if (frequency[k] == maxFreq) {
+        modes.push(k);
+      }
+    }
+  
+    return modes.toString();
+  }
 
 function getMode(x) {
 
@@ -109,10 +140,17 @@ function validateNumber(x) {
 }
 
 
-function clearList1() {
+function clearEveryThing() {
     // clear the table of all rows
     var tableRef = document.getElementById("list1");
     tableRef.innerHTML = " ";
+    document.getElementById("minNumber").value = '';
+    document.getElementById('maxNumber').value = '';
+    document.getElementById('theNumber').value = '';
+    document.getElementById("mean").value = 'tbd';
+    document.getElementById("median").value = 'tbd';
+    document.getElementById("modes").value = 'tbd';
+    
   }
 
   function clearList2() {

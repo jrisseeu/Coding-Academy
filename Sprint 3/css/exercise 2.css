@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+.checkBox{
+    float: left;
+}
+  
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .flexboxRow {
+    display: flex;
+    flex-wrap:wrap;
+    background-color: honeydew;
+    margin: 50px;
+  }
+  
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    color: black;
+  }
+  
+  /* Create four equal entries in myflexbox */
+  .flexboxColumn {
+    flex: 25%;
+    padding: 10px;
+    border-style: solid;
+    font-size: 25px;
+  }
+  
+  /* Media query - on screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .flexboxColumn {
+      flex: 25%;
+    }
+  }
+  
+  /* Media query - on screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .flexboxRow {
+      flex-direction: column;
+    }
+  }
+  
+ 

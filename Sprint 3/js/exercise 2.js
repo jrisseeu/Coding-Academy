@@ -46,10 +46,10 @@ async function weHaveTheMeat() {
     var securedJASON;
     if (encrypt === "1") {
      securedJASON = cipher1(myObj);   // apply the first cipher algorithm
-    } else
-    //securedJASON = cipher2(myObj); 
-    securedJASON =  verySimpleCypher(myObj,encrypt);
-
+    } else {
+      //securedJASON = cipher2(myObj); 
+      securedJASON =  verySimpleCypher(myObj);
+    }
 
     for (var paras in securedJASON) {
         document.getElementById("encryptedJson").innerHTML +=  "<p>" + securedJASON[paras] + "</p>";
@@ -70,7 +70,6 @@ function verySimpleCypher(myObj, shift) {
         for (var chara in myObj[para]) {
             oldChar = myObj[para][chara];
             newChar = encrypteTheText(oldChar, shift);
-    
             newPara += newChar;
         }
         secureJASON.push(newPara);
@@ -79,19 +78,19 @@ function verySimpleCypher(myObj, shift) {
     return secureJASON;
 }
 
-//will shift the charachter to thr right by the number selected in the encryptin dropdown
-function encrypteTheText(char, shift) {
+//
+function encrypteTheText(char) {
     
-    const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    const alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',".","-",","];
+    const returnVal =['U','Y','T','P','Z','H','R','O','A','H','E','B','V','S','D','F','G','X','I','N','J','Q','K','M','C','L',"@","#","$"];
+    
     var include = alphabet.includes(char.toUpperCase());
     
     //IF a letter.  otherwise keep the character
     if (include){      
         var position = alphabet.indexOf(char.toUpperCase());
-        
-        var newPosition = (position + shift) % alphabet.length;
-        
-        return alphabet[newPosition];
+        var newChar = returnVal[position];
+        return newChar;
    } else   
      return char;
   }        

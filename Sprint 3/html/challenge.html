@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Call Exercise</title>
+
+    <link rel="stylesheet" href="../css/challenge.css">
+    <script src="../js/challenge.js"> </script>
+
+</head>
+  <body>
+    <h1>Random quote generator</h1>
+  
+    <div class="flexboxRow">
+      <div class="flexboxColumn">
+        <p></p>
+        <label for="qLength">Select your quote length?</label>
+            <select name="qLength" id="qLength">
+              <option value="Short">Short</option>
+              <option value="Medium">Medium</option>
+              <option value="Long">Long</option>
+            </select>
+        <br>
+        <input  type="button" value="Get your quote" onclick="findTheQuote()">
+        
+      </div>
+
+      <div class="flexboxColumn">
+          <h3 id="quoteArea">Famous Quote</h3>
+        <p id="jsonResp"> </p>
+      </div>
+      <div></div>
+      <div></div>
+      
+    </div>
+    </body>
+</html>

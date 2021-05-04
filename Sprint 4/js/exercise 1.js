@@ -19,13 +19,8 @@ async function findUserRepos() {
         return true;
     } 
     
-    var repoLinks = "";
-    for (var theRepo in myObj) {
-        repoLinks += "<p><a href=" + myObj[theRepo].html_url + ">" + myObj[theRepo].name +"</a></p>";
-    }
-
     document.getElementById("userInfo").innerHTML =  userID;
-    document.getElementById("repoInfo").innerHTML =  repoLinks;
+    document.getElementById("repoInfo").innerHTML =  buildHTML(myObj);
 
     //clear the entry field
     document.getElementById("userID").value = '';    
@@ -33,6 +28,16 @@ async function findUserRepos() {
 
     return true;
 
+}
+
+//Format the repository links using the json Object
+function buildHTML(jsonObject) {
+    var repoLinks = "";
+    for (var theRepo in jsonObject) {
+        repoLinks += "<p><a href=" + jsonObject[theRepo].html_url + ">" + jsonObject[theRepo].name +"</a></p>";
+    }
+
+    return repoLinks;
 }
 
 

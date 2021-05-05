@@ -105,4 +105,6 @@ function startOver() {
     var newsType = document.getElementById("newsType").value = "articles";
     var getNbr = document.getElementById("findVal").value = "1";
     var testProd = document.getElementById("server").value = "prod";
+
+    document.getElementById("newsInfo").innerHTML = "";
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List exercise</title>
+
+    <link rel="stylesheet" href="../css/exercise 2.css">
+    <script src="../js/exercise2.js"> </script>
+
+</head>
+  <body>
+    <h1>Fill the correct list exercise 2 (TypeScript)</h1>
+  
+    <div class="flexboxRow">
+      <div class="flexboxColumn">
+        <h2>Enter in a word and the list to put it in</h2> 
+        What word do you want added? <input type="text" name="theWord" id="theWord" value="" size="10"> <br>
+        Add word to list 1 or 2? <input type="text" name="theNumber" id="theNumber" value="" size="10"> <br> <br>
+
+    
+        <input type="checkbox" id="byCase" name="byCase" class="checkBox" checked> 
+        <label for="byCase" > Is Palindrome check case sensitive?</label><br>
+        <br>
+
+        <input  type="button" value="Add item" onclick="validateEntry()">
+        
+      </div>
+
+      <div class="flexboxColumn">
+        <h3>Is the word a Palindrome?</h3>
+        
+        <table id="list1"> </table>
+        <input  type="button" value="Clear" onclick="clearList1()">
+        
+      </div>
+
+      <div class="flexboxColumn">
+        <h3>Is the word a Palindrome?</h3>
+        <table id="list2"></table>
+        <input  type="button" value="Clear" onclick="clearList2()">
+      </div>
+      
+    </div>
+    </body>
+</html>

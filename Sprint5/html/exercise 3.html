@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendency calculator</title>
+
+    <link rel="stylesheet" href="../css/exercise 3.css">
+    <script src="../js/exercise3.js"> </script>
+
+</head>
+  <body>
+    <h1>Central tendency calculator - TypeScript</h1>
+  
+    <div class="flexboxRow">
+      <div class="flexboxColumn">
+        <h2>Enter the min and max range of numbers:</h2> 
+        Minimum value of numbers: <input type="number" name="min" id="minNumber" value="" size="10"> <br>
+        Maximum value of numbers: <input type="number" name="max" id="maxNumber" value="" size="10">
+
+        <h2>Enter your numbers:</h2> 
+        Enter your number: <input type="number" name="theNumber" id="theNumber" value="" size="10">
+
+        <input  type="button" value="Calculate" onclick="validateEntry()"> <br><br>
+
+        <input  type="button" value="Reset screen" onclick="clearEveryThing()">
+        
+      </div>
+
+      <div class="flexboxColumn">
+        <h3>Your numbers:</h3>
+        
+        <table id="list1"> </table>
+        
+        
+      </div>
+
+      <div class="flexboxColumn">
+        <h3>Central tendencies:</h3>
+            Mean: <output type="number" name="mean" id="mean"> tbd </output> <br>
+            Median: <output type="number" name="median" id="median"> tbd </output><br>
+            Mode(s): <output type="number" name="modes" id="modes"> tbd </output><br>
+        
+              
+        
+      </div>
+      
+    </div>
+    </body>
+</html>

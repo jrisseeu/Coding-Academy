@@ -1,3 +1,4 @@
+export{}
 function validateEntry() {
     let word:string = (<HTMLInputElement>document.getElementById("theWord")).value;
     let number:number = (<HTMLInputElement>document.getElementById("theNumber")).valueAsNumber;

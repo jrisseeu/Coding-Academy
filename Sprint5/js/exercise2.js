@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 function validateEntry() {
     var word = document.getElementById("theWord").value;
     var number = document.getElementById("theNumber").valueAsNumber;

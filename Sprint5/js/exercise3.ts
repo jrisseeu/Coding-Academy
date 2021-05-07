@@ -1,9 +1,9 @@
+//export {}
 function validateEntry() {
     let min:number = (<HTMLInputElement>document.getElementById("minNumber")).valueAsNumber;
     let max:number = (<HTMLInputElement>document.getElementById("maxNumber")).valueAsNumber;
     let theNumber:number = (<HTMLInputElement>document.getElementById("theNumber")).valueAsNumber;
-   
-          
+    
     if (!validateNumber(min)) {
         alert("Please enter a starting number that is > 0");
         return false;
@@ -56,14 +56,14 @@ function getTheMode(x:HTMLTableElement) {
     let maxFreq = 0; // holds the max frequency.
     let modes = [];
   
-    for (var i in array) {
+    for (let i in array) {
       frequency[array[i]] = (frequency[array[i]] || 0) + 1; // increment frequency.
       if (frequency[array[i]] > maxFreq) { // is this frequency > max so far ?
         maxFreq = frequency[array[i]]; // update max.
       }
     }
   
-    for (var k in frequency) {
+    for (let k in frequency) {
       if (frequency[k] == maxFreq) {
         modes.push(k);
       }

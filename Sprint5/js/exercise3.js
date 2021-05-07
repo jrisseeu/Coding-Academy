@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 function validateEntry() {
     var min = document.getElementById("minNumber").valueAsNumber;
     var max = document.getElementById("maxNumber").valueAsNumber;

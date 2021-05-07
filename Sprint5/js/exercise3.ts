@@ -1,7 +1,7 @@
 function validateEntry() {
-    let min:string = (<HTMLInputElement>document.getElementById("minNumber")).value;
-    let max:string = (<HTMLInputElement>document.getElementById("maxNumber")).value;
-    var theNumber = (<HTMLInputElement>document.getElementById("theNumber")).value;
+    let min:number = (<HTMLInputElement>document.getElementById("minNumber")).valueAsNumber;
+    let max:number = (<HTMLInputElement>document.getElementById("maxNumber")).valueAsNumber;
+    let theNumber:number = (<HTMLInputElement>document.getElementById("theNumber")).valueAsNumber;
    
           
     if (!validateNumber(min)) {
@@ -14,12 +14,12 @@ function validateEntry() {
         return false;
     } 
 
-    if (parseInt(theNumber) < parseInt(min)) {
+    if (theNumber < min) {
       alert("Number entered has to be >= minimum number of: " + min);
       return false;
     } 
 
-    if (Number(theNumber) > Number(max)) {
+    if (theNumber > max) {
        alert("Number entered has to be <= maximum number of: " + max);
        return false;
    } 
@@ -28,8 +28,8 @@ function validateEntry() {
    (<HTMLInputElement>document.getElementById("minNumber")).disabled = true;
    (<HTMLInputElement>document.getElementById("maxNumber")).disabled = true;
 
-    let table1:any = (<HTMLInputElement>document.getElementById("list1"));
-    table1.insertRow(table1.rows.length).innerHTML = theNumber;
+    let table1:HTMLTableElement  = (<HTMLTableElement>document.getElementById("list1"));
+    table1.insertRow(table1.rows.length).innerHTML = theNumber.toString();
     
     document.getElementById("mean").innerHTML = getMean(table1);
     document.getElementById("median").innerHTML = getMedian(table1).toString();
@@ -41,7 +41,7 @@ function validateEntry() {
     return true;  
 }
 
-function getTheMode(x:any):string {
+function getTheMode(x:HTMLTableElement) {
     if (x.rows.length == 1) {
         return (x.rows[0]).innerHTML;
     }
@@ -72,7 +72,7 @@ function getTheMode(x:any):string {
     return modes.toString();
   }
 
-function getMedian(x:any):number {
+function getMedian(x:HTMLTableElement):number {
 
     if (x.rows.length == 1) {
         return parseInt((x.rows[0]).innerHTML);
@@ -99,7 +99,7 @@ function getMedian(x:any):number {
     } else {
         let val1:number = array[half-1];
         let val2:number = array[half];
-        return ((Number(val1) + Number(val2)) / 2); 
+        return ((Number(val1) + Number(val2)) / 2);  
     }
 }
 
@@ -116,9 +116,9 @@ function getMean(x:any):string {
     return mean.toString();
 }
 
-function validateNumber(str: string) {
+function validateNumber(str: number) {
     const pattern = /[1-9999999999]/g;
-    return str.match(pattern);     
+    return str.toString().match(pattern);     
 }
 
 

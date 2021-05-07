@@ -1,6 +1,6 @@
 function validateEntry() {
     var word = document.getElementById("theWord").value;
-    var number = document.getElementById("theNumber").value;
+    var number = document.getElementById("theNumber").valueAsNumber;
     var caseSens = document.getElementById("byCase").checked;
     var origWord = word;
     if (!caseSens) {
@@ -14,7 +14,7 @@ function validateEntry() {
         alert("Please enter either a 1 or 2");
         return false;
     }
-    if (number == '1') {
+    if (number == 1) {
         var result = isWordOnePalindrome(word);
         var table1 = document.getElementById("list1");
         table1.insertRow(table1.rows.length).innerHTML = origWord + ": " + result;
@@ -61,7 +61,7 @@ function reverseInputString(str) {
 }
 function validateNumber(str) {
     var pattern = /[1-2]/g;
-    return str.match(pattern);
+    return str.toString().match(pattern);
 }
 function validateLetters(str) {
     var pattern = /^[A-Za-z]+$/;

@@ -1,6 +1,6 @@
 function validateEntry() {
     let word:string = (<HTMLInputElement>document.getElementById("theWord")).value;
-    let number:string = (<HTMLInputElement>document.getElementById("theNumber")).value;
+    let number:number = (<HTMLInputElement>document.getElementById("theNumber")).valueAsNumber;
     let caseSens:boolean = (<HTMLInputElement>document.getElementById("byCase")).checked;
     let origWord:string = word;
     
@@ -18,14 +18,14 @@ function validateEntry() {
         return false;
     } 
     
-    if (number == '1') {
+    if (number == 1) {
         let result:boolean = isWordOnePalindrome(word);
-        let table1:any = (<HTMLInputElement>document.getElementById("list1"));
+        let table1:HTMLTableElement = (<HTMLTableElement >document.getElementById("list1"));
         table1.insertRow(table1.rows.length).innerHTML = origWord + ": " + result;
         
     } else {
         let result:boolean = isWordTwoPalindrome2(word);
-        let table2:any  = (<HTMLInputElement>document.getElementById("list2"));
+        let table2:HTMLTableElement   = (<HTMLTableElement>document.getElementById("list2"));
         table2.insertRow(table2.rows.length).innerHTML  = origWord + ": " + result;
         
     }
@@ -71,9 +71,9 @@ function reverseInputString(str: string):string {
     return returnVal; 
 }
 
-function validateNumber(str:string) {
+function validateNumber(str:number) {
     const pattern = /[1-2]/g;
-    return str.match(pattern);
+    return str.toString().match(pattern);
 }
 
 function validateLetters(str:string) {

@@ -1,7 +1,7 @@
 function validateEntry() {
-    var min = document.getElementById("minNumber").value;
-    var max = document.getElementById("maxNumber").value;
-    var theNumber = document.getElementById("theNumber").value;
+    var min = document.getElementById("minNumber").valueAsNumber;
+    var max = document.getElementById("maxNumber").valueAsNumber;
+    var theNumber = document.getElementById("theNumber").valueAsNumber;
     if (!validateNumber(min)) {
         alert("Please enter a starting number that is > 0");
         return false;
@@ -10,11 +10,11 @@ function validateEntry() {
         alert("Please enter a maximum number that is > 0");
         return false;
     }
-    if (parseInt(theNumber) < parseInt(min)) {
+    if (theNumber < min) {
         alert("Number entered has to be >= minimum number of: " + min);
         return false;
     }
-    if (Number(theNumber) > Number(max)) {
+    if (theNumber > max) {
         alert("Number entered has to be <= maximum number of: " + max);
         return false;
     }
@@ -22,7 +22,7 @@ function validateEntry() {
     document.getElementById("minNumber").disabled = true;
     document.getElementById("maxNumber").disabled = true;
     var table1 = document.getElementById("list1");
-    table1.insertRow(table1.rows.length).innerHTML = theNumber;
+    table1.insertRow(table1.rows.length).innerHTML = theNumber.toString();
     document.getElementById("mean").innerHTML = getMean(table1);
     document.getElementById("median").innerHTML = getMedian(table1).toString();
     document.getElementById("modes").innerHTML = getTheMode(table1);
@@ -92,7 +92,7 @@ function getMean(x) {
 }
 function validateNumber(str) {
     var pattern = /[1-9999999999]/g;
-    return str.match(pattern);
+    return str.toString().match(pattern);
 }
 function clearEveryThing() {
     // clear the table of all rows

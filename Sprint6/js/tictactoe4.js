@@ -8,10 +8,8 @@ var winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-// Function called whenever user tab on any box
 var gameState = ["", "", "", "", "", "", "", "", ""];
-var keepPlaying = true;
-document.getElementById('print').innerHTML = "Player X Turn";
+document.getElementById('print').innerHTML = "Player 1 (X) Turn";
 function myfunc(clickedCellEvent) {
     var keepPlaying = true;
     var clickedCell = clickedCellEvent.target;
@@ -60,15 +58,15 @@ function myfunc(clickedCellEvent) {
         }
     }
     if (roundDraw == 9) {
-        document.getElementById('print').innerHTML = "Match Tie";
+        document.getElementById('print').innerHTML = "Match is a Tie";
         //window.alert('Match Tie');
         return;
     }
     if (flag == 1) {
-        document.getElementById('print').innerHTML = "Player X Turn";
+        document.getElementById('print').innerHTML = "Player 1 (X) Turn";
     }
     else {
-        document.getElementById('print').innerHTML = "Player 0 Turn";
+        document.getElementById('print').innerHTML = "Player 2 (O) Turn";
     }
     return;
 }
@@ -79,9 +77,7 @@ function myfunc_2() {
         document.getElementById(i.toString()).value = '';
         document.getElementById(i.toString()).disabled = false;
     }
-    document.getElementById('print').innerHTML = "Player X Turn";
+    document.getElementById('print').innerHTML = "Player 1 (X) Turn";
 }
-// Here onwards, functions check turn of the player 
-// and put accordingly value X or 0
 var flag = 1;
 document.querySelectorAll('.cell').forEach(function (cell) { return cell.addEventListener('click', myfunc); });

@@ -8,17 +8,15 @@ var winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-// Function called whenever user tab on any box
 
 let gameState: string[] = ["", "", "", "", "", "", "", "", ""];
-var keepPlaying = true;
-document.getElementById('print').innerHTML = "Player X Turn";
+document.getElementById('print').innerHTML = "Player 1 (X) Turn";
 
 function myfunc(clickedCellEvent) {
 
     let keepPlaying:boolean = true;
     var clickedCell = clickedCellEvent.target;
-    var clickedCellIndex = parseInt(clickedCell.getAttribute('index'));
+    let clickedCellIndex:number = parseInt(clickedCell.getAttribute('index'));
 
     let player:string;
     if (flag == 1) {
@@ -29,7 +27,7 @@ function myfunc(clickedCellEvent) {
         flag = 1;
     }
     
-    for (var i:number = 0; i <= 8; i++) {
+    for (let i:number = 0; i <= 8; i++) {
 
         (<HTMLInputElement>document.getElementById(i.toString())).value = gameState[i];
         if (gameState[i] !== ''){
@@ -41,12 +39,11 @@ function myfunc(clickedCellEvent) {
     }
 
 
-    for (var j:number = 0; j <= 7; j++) {
+    for (let j:number = 0; j <= 7; j++) {
         let winner = winningConditions[j];
         let a:string = gameState[winner[0]];
         let b:string = gameState[winner[1]];
         let c:string = gameState[winner[2]];
-
       
         if (a === 'X' && b === 'X' && c ==='X')  {
             //window.alert("WINNER 1"); 
@@ -70,17 +67,17 @@ function myfunc(clickedCellEvent) {
     }
         
     if (roundDraw == 9) {
-        document.getElementById('print').innerHTML = "Match Tie";
+        document.getElementById('print').innerHTML = "Match is a Tie";
         //window.alert('Match Tie');
         return;
     }
 
 
     if (flag == 1) {
-        document.getElementById('print').innerHTML = "Player X Turn";
+        document.getElementById('print').innerHTML = "Player 1 (X) Turn";
     }
     else {
-        document.getElementById('print').innerHTML = "Player 0 Turn";
+        document.getElementById('print').innerHTML = "Player 2 (O) Turn";
     }
 
     return;
@@ -89,16 +86,15 @@ function myfunc(clickedCellEvent) {
 // Function to reset game
 function myfunc_2() {
     location.reload();
-    for (var i:number = 0; i <= 8; i++) {
+    for (let i:number = 0; i <= 8; i++) {
 
         (<HTMLInputElement>document.getElementById(i.toString())).value = '';  
         (<HTMLInputElement>document.getElementById(i.toString())).disabled = false;
     }
 
-    document.getElementById('print').innerHTML = "Player X Turn";
+    document.getElementById('print').innerHTML = "Player 1 (X) Turn";
 }
   
-// Here onwards, functions check turn of the player 
-// and put accordingly value X or 0
- let flag:number = 1;
+
+let flag:number = 1;
 document.querySelectorAll('.cell').forEach(function (cell) { return cell.addEventListener('click', myfunc); });

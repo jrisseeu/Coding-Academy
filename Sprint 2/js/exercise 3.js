@@ -26,8 +26,8 @@ function validateEntry() {
    } 
 
    //disable the buttons so the user cannot enter any changes
-   document.getElementById("minNumber").disabled = true;
-   document.getElementById("maxNumber").disabled = true;
+   document.getElementById("minNumber")).disabled = true;
+   document.getElementById("maxNumber")).disabled = true;
 
     var table1 = document.getElementById("list1");
     table1.insertRow(table1.rows.length).innerHTML = theNumber;

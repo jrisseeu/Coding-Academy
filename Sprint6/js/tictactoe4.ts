@@ -18,7 +18,6 @@ function myfunc(clickedCellEvent) {
     var clickedCell = clickedCellEvent.target;
     let clickedCellIndex:number = parseInt(clickedCell.getAttribute('index'));
 
-    let player:string;
     if (flag == 1) {
         gameState[clickedCellIndex] = "X";
         flag = 0;
@@ -38,37 +37,18 @@ function myfunc(clickedCellEvent) {
 
     }
 
-
-    for (let j:number = 0; j <= 7; j++) {
-        let winner = winningConditions[j];
-        let a:string = gameState[winner[0]];
-        let b:string = gameState[winner[1]];
-        let c:string = gameState[winner[2]];
-      
-        if (a === 'X' && b === 'X' && c ==='X')  {
-            //window.alert("WINNER 1"); 
-            keepPlaying = false;
-            document.getElementById('print').innerHTML = "Player 1 is the winner";
-            return;
-        } else if (a === 'O' && b === 'O' && c ==='O') {
-            //window.alert("WINNER 2"); 
-            document.getElementById('print').innerHTML = "Player 2 is the winner";    
-            keepPlaying = false;
-            return;
-        } 
-    }
-    
     let roundDraw:number = 0;
-    if (keepPlaying) {
+    if (!checkForWinner()) {
         for (let a:number = 0; a < 9; a++){
             if ((gameState[a] == "X") || (gameState[a] == "O"))
                roundDraw++;
          }
+    } else {
+        return;
     }
         
     if (roundDraw == 9) {
         document.getElementById('print').innerHTML = "Match is a Tie";
-        //window.alert('Match Tie');
         return;
     }
 
@@ -81,6 +61,28 @@ function myfunc(clickedCellEvent) {
     }
 
     return;
+ }
+
+ //loop through the game state to see if the player has all the winning slots filled
+ function checkForWinner() {
+
+    for (let j:number = 0; j <= 7; j++) {
+        let winner = winningConditions[j];
+        let a:string = gameState[winner[0]];
+        let b:string = gameState[winner[1]];
+        let c:string = gameState[winner[2]];
+      
+        if (a === 'X' && b === 'X' && c ==='X')  {
+            //window.alert("WINNER 1"); 
+            document.getElementById('print').innerHTML = "Player 1 is the winner";
+            return true;
+        } else if (a === 'O' && b === 'O' && c ==='O') {
+            //window.alert("WINNER 2"); 
+            document.getElementById('print').innerHTML = "Player 2 is the winner";    
+            return true;
+        } 
+    }
+    return false;
  }
   
 // Function to reset game

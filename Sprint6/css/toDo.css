@@ -1,0 +1,42 @@
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.checked-task,
+.checked-task:hover {
+    float: right;
+    cursor: pointer;
+    color: dodgerblue;
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.remove-task,
+.remove-task:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.checked-list,
+.checked-list:hover {
+    cursor: pointer;
+    color: grey;
+    text-decoration-line: line-through;
+}
+
+.delete-task,
+.delete-task:hover {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+}

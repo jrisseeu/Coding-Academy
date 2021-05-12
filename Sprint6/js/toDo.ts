@@ -36,12 +36,12 @@ function newTask(e) {
 
   //Create the checked button
   let checkBtn:HTMLElement = (<HTMLElement> document.createElement('a'));
-  checkBtn.classList.value = 'checked-task';
+  checkBtn.classList.add('checked-task');
   checkBtn.textContent = ' Done ';
 
   //Create the remove Button
   let removeBtn:HTMLElement =  (<HTMLElement> document.createElement('a'));
-  removeBtn.classList.value = 'remove-task';
+  removeBtn.classList.add('remove-task');
   removeBtn.textContent = ' Remove ';
 
   //Create <li>
@@ -66,7 +66,7 @@ function completeTask(e) {
     
     //Create the remove Button
     let deleteBtn:HTMLElement = (<HTMLElement>document.createElement('a')); //anchor tag
-    deleteBtn.classList.value = 'delete-task';
+    deleteBtn.classList.add('delete-task');
     deleteBtn.textContent = ' Delete ';
 
     //Create <li>

@@ -24,11 +24,11 @@ function newTask(e) {
     }
     //Create the checked button
     var checkBtn = document.createElement('a');
-    checkBtn.classList.value = 'checked-task';
+    checkBtn.classList.add('checked-task');
     checkBtn.textContent = ' Done ';
     //Create the remove Button
     var removeBtn = document.createElement('a');
-    removeBtn.classList.value = 'remove-task';
+    removeBtn.classList.add('remove-task');
     removeBtn.textContent = ' Remove ';
     //Create <li>
     var li = document.createElement('li');
@@ -47,7 +47,7 @@ function completeTask(e) {
         var taskDone = taskText.substring(0, taskText.length - 14);
         //Create the remove Button
         var deleteBtn = document.createElement('a'); //anchor tag
-        deleteBtn.classList.value = 'delete-task';
+        deleteBtn.classList.add('delete-task');
         deleteBtn.textContent = ' Delete ';
         //Create <li>
         var li = document.createElement('li');

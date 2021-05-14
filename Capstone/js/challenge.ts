@@ -1,5 +1,5 @@
 let lettersToUse = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-//let lettersUsed  = ["Z","","","","","","","","","","","","","","","","","","","","","","","","",""];
+let wordInfo:string ="";
 let lettersUsed  = [];
 let wordToUse = [];
 let wordDisplay = [];
@@ -25,6 +25,7 @@ function newGame() {
     wordDisplay = [];
     lettersUsed = [];
     wrongGuessCount = 0;
+    wordInfo = "";
     document.getElementById("jsonResp").innerHTML = "";
     document.getElementById("hiddenWord").innerHTML = "";
     //document.getElementById("wordList").innerHTML =  "";
@@ -37,7 +38,7 @@ async function startTheGame() {
         
     wordToUse = [];
     wordDisplay = [];
-
+    wordInfo = "";
     var apiUrl = "https://random-words-api.vercel.app/word";
     var response = await fetch(apiUrl);
     var myObj;
@@ -58,7 +59,7 @@ async function startTheGame() {
     for (var para in prsed) {
         theQuoteInfo = createResponse(prsed[para].word.toUpperCase(), prsed[para].definition);
         wordLength = prsed[para].word.length;
-        var wordInfo = prsed[para].word;
+        wordInfo = prsed[para].word;
        for (let index = 0; index < wordLength; index++) {
           wordToUse.push("_");
           wordDisplay.push(wordInfo[index].toUpperCase());
@@ -68,8 +69,6 @@ async function startTheGame() {
     setupLettersAvailable();
     cleanUpHiddenWord();
 
-    //document.getElementById("wordList").innerHTML = wordDisplay;
-    //document.getElementById("lettersLeft").innerHTML = lettersToUse;
     document.getElementById("lettersUsed").innerHTML = "";
     document.getElementById("jsonResp").innerHTML =  theQuoteInfo;
     
@@ -219,7 +218,7 @@ function isLetterInWord(playedLetter:string) {
     }
 
     if (maxWrongGuess == wrongGuessCount) {
-        window.alert("Sorry, you have reached your max number of guesses");
+        window.alert("Sorry, max number of wrong guesses met for word > " +wordInfo);
     }
 
 }

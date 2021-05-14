@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var lettersToUse = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-//let lettersUsed  = ["Z","","","","","","","","","","","","","","","","","","","","","","","","",""];
+var wordInfo = "";
 var lettersUsed = [];
 var wordToUse = [];
 var wordDisplay = [];
@@ -55,6 +55,7 @@ function newGame() {
     wordDisplay = [];
     lettersUsed = [];
     wrongGuessCount = 0;
+    wordInfo = "";
     document.getElementById("jsonResp").innerHTML = "";
     document.getElementById("hiddenWord").innerHTML = "";
     //document.getElementById("wordList").innerHTML =  "";
@@ -64,12 +65,13 @@ function newGame() {
 }
 function startTheGame() {
     return __awaiter(this, void 0, void 0, function () {
-        var apiUrl, response, myObj, myObjStr, prsed, theQuoteInfo, wordLength, para, wordInfo, index;
+        var apiUrl, response, myObj, myObjStr, prsed, theQuoteInfo, wordLength, para, index;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     wordToUse = [];
                     wordDisplay = [];
+                    wordInfo = "";
                     apiUrl = "https://random-words-api.vercel.app/word";
                     return [4 /*yield*/, fetch(apiUrl)];
                 case 1:
@@ -96,8 +98,6 @@ function startTheGame() {
                     }
                     setupLettersAvailable();
                     cleanUpHiddenWord();
-                    //document.getElementById("wordList").innerHTML = wordDisplay;
-                    //document.getElementById("lettersLeft").innerHTML = lettersToUse;
                     document.getElementById("lettersUsed").innerHTML = "";
                     document.getElementById("jsonResp").innerHTML = theQuoteInfo;
                     return [2 /*return*/, true];
@@ -211,7 +211,7 @@ function isLetterInWord(playedLetter) {
         window.alert("Congratulations, you solved the word");
     }
     if (maxWrongGuess == wrongGuessCount) {
-        window.alert("Sorry, you have reached your max number of guesses");
+        window.alert("Sorry, max number of wrong guesses met for word > " + wordInfo);
     }
 }
 function cleanUpHiddenWord() {

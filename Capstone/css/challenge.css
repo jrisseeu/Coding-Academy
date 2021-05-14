@@ -16,9 +16,12 @@
   }
 
   .usedLetters {
-    color: green;
+    color: green;  
   }
 
+  .hiddenWord {
+    color: green;
+  }
 
   .letters-to-use,
   .letters-to-use:hover {

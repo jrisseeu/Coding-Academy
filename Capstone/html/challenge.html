@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+
+    <link rel="stylesheet" href="../css/challenge.css">
+    
+
+</head>
+  <body>
+    <main>
+    <h1>Hangman</h1>
+    <form action="#" id="form">
+      <label for="addLetter"></label>
+      <!--<input type="text" id="addLetter" placeholder="Add letter and press enter?" maxlength="75" value="" autocomplete="off"></input><BR>-->
+        <input class="button" type="button" value="Start Hangman" onclick="startTheGame()">
+        <input class="button" type="button" value="New Game" onclick="newGame()">
+      
+  </form>
+
+
+    
+    <div class="flexboxRow">
+      <div class="flexboxColumn">
+        <h2 id="quoteArea">Word Definition</h2>
+        <p id="jsonResp"> </p>   
+      </div>
+
+      <div class="flexboxColumn">
+        <h2 id="">Correct Guesses</h2>
+        <p id="hiddenWord"> </p>
+      </div>
+
+      <div class="flexboxColumn">
+        <h2 id="">Letters available</h2>
+        <div id="lettersLeft"></div>
+      </div>
+
+      <div class="flexboxColumn">
+        <h2 id="">Letters Used</h2>
+        <p class="usedLetters" id="lettersUsed"> </p>
+      </div>
+
+    </div>    
+      
+    
+  </main>
+    <script src="../js/challenge.js"> </script>
+  </body>
+</html>

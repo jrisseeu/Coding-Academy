@@ -13,8 +13,17 @@
     <main>
     <h1>Hangman</h1>
     <form action="#" id="form">
-      <label for="addLetter"></label>
-      <!--<input type="text" id="addLetter" placeholder="Add letter and press enter?" maxlength="75" value="" autocomplete="off"></input><BR>-->
+      
+      <label for="standard-select" class="standard-select">Word Category</label>
+        <div class="select" >
+        <select id="standard-select">
+          <option value="Animal">Animal</option>
+          <option value="Noun">Noun</option>
+          <option value="Adjective">Adjective</option>
+        </select>
+      </div>
+    <br>
+
         <input class="button" type="button" value="Start Hangman" onclick="startTheGame()">
         <input class="button" type="button" value="New Game" onclick="newGame()">
       

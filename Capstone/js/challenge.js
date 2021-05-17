@@ -58,21 +58,33 @@ function newGame() {
     wordInfo = "";
     document.getElementById("jsonResp").innerHTML = "";
     document.getElementById("hiddenWord").innerHTML = "";
-    //document.getElementById("wordList").innerHTML =  "";
     document.getElementById("lettersLeft").innerHTML = "";
     document.getElementById("lettersUsed").innerHTML = "";
     startTheGame();
 }
 function startTheGame() {
     return __awaiter(this, void 0, void 0, function () {
-        var apiUrl, response, myObj, myObjStr, prsed, theQuoteInfo, wordLength, para, index;
+        var wordCategory, apiUrl, response, myObj, myObjStr, prsed, theWord, wordLength, index;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     wordToUse = [];
                     wordDisplay = [];
                     wordInfo = "";
-                    apiUrl = "https://random-words-api.vercel.app/word";
+                    wordCategory = document.getElementById('standard-select').value;
+                    if (wordCategory == "Noun") {
+                        apiUrl = "https://random-word-form.herokuapp.com/random/noun";
+                    }
+                    else if (wordCategory == "Adjective") {
+                        apiUrl = "https://random-word-form.herokuapp.com/random/adjective";
+                    }
+                    else if (wordCategory == "Animal") {
+                        apiUrl = "https://random-word-form.herokuapp.com/random/animal";
+                    }
+                    else {
+                        window.alert("Select a category");
+                        return [2 /*return*/];
+                    }
                     return [4 /*yield*/, fetch(apiUrl)];
                 case 1:
                     response = _a.sent();
@@ -87,27 +99,75 @@ function startTheGame() {
                 case 4:
                     myObjStr = JSON.stringify(myObj);
                     prsed = JSON.parse(myObjStr);
-                    for (para in prsed) {
-                        theQuoteInfo = createResponse(prsed[para].word.toUpperCase(), prsed[para].definition);
-                        wordLength = prsed[para].word.length;
-                        wordInfo = prsed[para].word;
-                        for (index = 0; index < wordLength; index++) {
-                            wordToUse.push("_");
-                            wordDisplay.push(wordInfo[index].toUpperCase());
-                        }
+                    theWord = prsed.toString().toUpperCase();
+                    wordLength = prsed.toString().length;
+                    wordInfo = theWord;
+                    for (index = 0; index < wordLength; index++) {
+                        wordToUse.push("_");
+                        wordDisplay.push(theWord[index]);
                     }
+                    getWordDefinition(theWord);
                     setupLettersAvailable();
                     cleanUpHiddenWord();
                     document.getElementById("lettersUsed").innerHTML = "";
-                    document.getElementById("jsonResp").innerHTML = theQuoteInfo;
                     return [2 /*return*/, true];
             }
         });
     });
 }
+function getWordDefinition(theWord) {
+    return __awaiter(this, void 0, void 0, function () {
+        var apiURL2, defResponse, defObj, theDef, defObString, prsed, para, theQuoteInfo;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    apiURL2 = "https://api.datamuse.com/words?sp=" + theWord + "&md=d";
+                    return [4 /*yield*/, fetch(apiURL2)];
+                case 1:
+                    defResponse = _a.sent();
+                    theDef = "";
+                    if (!(defResponse.status >= 200 && defResponse.status <= 299)) return [3 /*break*/, 3];
+                    return [4 /*yield*/, defResponse.json()];
+                case 2:
+                    defObj = _a.sent();
+                    return [3 /*break*/, 4];
+                case 3:
+                    alert("failed call" + defObj.status + " status text " + defObj.statusText);
+                    return [2 /*return*/, ""];
+                case 4:
+                    defObString = JSON.stringify(defObj);
+                    prsed = JSON.parse(defObString);
+                    for (para in prsed) {
+                        theDef = prsed[para].defs;
+                        try {
+                            theDef = theDef.toString().replace(/(\r\n|\n|\r|\,n)/gm, " ");
+                            //theDef = theDef.toString().replace(/,/g,"");
+                        }
+                        catch (error) {
+                            theDef = "";
+                        }
+                        break;
+                    }
+                    if (theDef == "") {
+                        theDef = "No definition found";
+                        document.getElementById("jsonResp").innerHTML = theDef;
+                    }
+                    else {
+                        theQuoteInfo = createResponse(theWord, theDef);
+                        document.getElementById("jsonResp").innerHTML = theQuoteInfo;
+                    }
+                    return [2 /*return*/, theDef];
+            }
+        });
+    });
+}
 function createResponse(theWord, theDefinition) {
+    var theDef = "";
+    for (var index = 2; index < theDefinition.length; index++) {
+        theDef += theDefinition[index];
+    }
     //var resp1 = "<p> <b>Word: </b>" + theWord +"</p>";
-    var resp1 = "<p>" + theDefinition + "</p>";
+    var resp1 = "<p>" + theDef + "</p>";
     return resp1;
 }
 //setups the letters available section of the screen with the list of letters that can be used
@@ -209,9 +269,11 @@ function isLetterInWord(playedLetter) {
     cleanUpHiddenWord();
     if (allLetterSlotsFilled()) {
         window.alert("Congratulations, you solved the word");
+        newGame();
     }
     if (maxWrongGuess == wrongGuessCount) {
         window.alert("Sorry, max number of wrong guesses met for word > " + wordInfo);
+        newGame();
     }
 }
 function cleanUpHiddenWord() {
@@ -237,4 +299,8 @@ function validateLetters(x) {
     var str = x.trim();
     var pattern = /^[A-Za-z]+$/;
     return str.match(pattern);
+}
+function removeSlashes(x) {
+    x = x.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
+    return x;
 }

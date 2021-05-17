@@ -78,8 +78,8 @@ async function startTheGame() {
 
 function createResponse(theWord, theDefinition) {
 
-    var resp1 = "<p> <b>Word: </b>" + theWord +"</p>";
-    resp1 += "<p>" + theDefinition + "</p>";
+    //var resp1 = "<p> <b>Word: </b>" + theWord +"</p>";
+    var resp1 = "<p>" + theDefinition + "</p>";
 
     return resp1;
 }

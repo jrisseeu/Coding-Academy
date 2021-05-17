@@ -106,8 +106,8 @@ function startTheGame() {
     });
 }
 function createResponse(theWord, theDefinition) {
-    var resp1 = "<p> <b>Word: </b>" + theWord + "</p>";
-    resp1 += "<p>" + theDefinition + "</p>";
+    //var resp1 = "<p> <b>Word: </b>" + theWord +"</p>";
+    var resp1 = "<p>" + theDefinition + "</p>";
     return resp1;
 }
 //setups the letters available section of the screen with the list of letters that can be used

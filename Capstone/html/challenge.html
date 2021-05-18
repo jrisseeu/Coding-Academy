@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
+    <title>Stickman</title>
 
     <link rel="stylesheet" href="../css/challenge.css">
     
@@ -11,7 +11,7 @@
 </head>
   <body>
     <main>
-    <h1>Hangman</h1>
+    <h1>Stickman</h1>
     <form action="#" id="form">
       
       <label for="standard-select" class="standard-select">Word Category</label>
@@ -21,20 +21,30 @@
           <option value="Noun">Noun</option>
           <option value="Adjective">Adjective</option>
         </select>
+        
       </div>
-    <br>
-
-        <input class="button" type="button" value="Start Hangman" onclick="startTheGame()">
+      <br>
+        <input class="button" type="button" value="Start" onclick="startTheGame()">
         <input class="button" type="button" value="New Game" onclick="newGame()">
       
+        <br>
+        <br>
+        <div>
+          <h2 class="definition" >Word Definition</h2>
+          <p id="definition" ></p>   
+        </div>
+   
+      
+    
+
   </form>
 
 
     
     <div class="flexboxRow">
       <div class="flexboxColumn">
-        <h2 id="quoteArea">Word Definition</h2>
-        <p id="jsonResp"> </p>   
+        <h2 id="">Your Progress</h2>
+        <p id="hangman" ></p>   
       </div>
 
       <div class="flexboxColumn">
@@ -52,8 +62,8 @@
         <p class="usedLetters" id="lettersUsed"> </p>
       </div>
 
-    </div>    
-      
+   
+    </div>
     
   </main>
     <script src="../js/challenge.js"> </script>

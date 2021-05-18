@@ -18,6 +18,13 @@
   font-family: cursive;
 }
 
+.definition {
+  font-size: 25px;
+  text-align: left;
+  color: green;
+  font-family: cursive;
+}
+
 select {
   color: green;
   font-family: cursive;
@@ -67,10 +74,12 @@ select {
 
   .usedLetters {
     color: green;  
+    font-size: 20px
   }
 
   .hiddenWord {
     color: green;
+    font-size: 20px
   }
 
   .letters-to-use,
@@ -89,6 +98,12 @@ select {
 
 .checkBox{
     float: left;
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
 }
   
   h1,h2 {

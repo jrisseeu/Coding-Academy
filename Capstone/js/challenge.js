@@ -42,11 +42,9 @@ var wordDisplay = [];
 var lettersLeft = document.getElementById('lettersLeft');
 var ltrsUsed = document.getElementById('lettersUsed');
 var wrongGuessCount = 0;
-var maxWrongGuess = 6;
+var maxWrongGuess = 10;
 eventListeners();
 function eventListeners() {
-    //Form Submission listener
-    //document.querySelector('#form').addEventListener('submit', letterEntered);
     //Creates the click event for the Remove tasks from completed tasks section
     lettersLeft.addEventListener('click', loadLettersLeftArray);
 }
@@ -56,7 +54,6 @@ function newGame() {
     lettersUsed = [];
     wrongGuessCount = 0;
     wordInfo = "";
-    document.getElementById("jsonResp").innerHTML = "";
     document.getElementById("hiddenWord").innerHTML = "";
     document.getElementById("lettersLeft").innerHTML = "";
     document.getElementById("lettersUsed").innerHTML = "";
@@ -110,65 +107,11 @@ function startTheGame() {
                     setupLettersAvailable();
                     cleanUpHiddenWord();
                     document.getElementById("lettersUsed").innerHTML = "";
+                    document.getElementById("hangman").innerHTML = formatImage("../images/0.jpg");
                     return [2 /*return*/, true];
             }
         });
     });
-}
-function getWordDefinition(theWord) {
-    return __awaiter(this, void 0, void 0, function () {
-        var apiURL2, defResponse, defObj, theDef, defObString, prsed, para, theQuoteInfo;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    apiURL2 = "https://api.datamuse.com/words?sp=" + theWord + "&md=d";
-                    return [4 /*yield*/, fetch(apiURL2)];
-                case 1:
-                    defResponse = _a.sent();
-                    theDef = "";
-                    if (!(defResponse.status >= 200 && defResponse.status <= 299)) return [3 /*break*/, 3];
-                    return [4 /*yield*/, defResponse.json()];
-                case 2:
-                    defObj = _a.sent();
-                    return [3 /*break*/, 4];
-                case 3:
-                    alert("failed call" + defObj.status + " status text " + defObj.statusText);
-                    return [2 /*return*/, ""];
-                case 4:
-                    defObString = JSON.stringify(defObj);
-                    prsed = JSON.parse(defObString);
-                    for (para in prsed) {
-                        theDef = prsed[para].defs;
-                        try {
-                            theDef = theDef.toString().replace(/(\r\n|\n|\r|\,n)/gm, " ");
-                            //theDef = theDef.toString().replace(/,/g,"");
-                        }
-                        catch (error) {
-                            theDef = "";
-                        }
-                        break;
-                    }
-                    if (theDef == "") {
-                        theDef = "No definition found";
-                        document.getElementById("jsonResp").innerHTML = theDef;
-                    }
-                    else {
-                        theQuoteInfo = createResponse(theWord, theDef);
-                        document.getElementById("jsonResp").innerHTML = theQuoteInfo;
-                    }
-                    return [2 /*return*/, theDef];
-            }
-        });
-    });
-}
-function createResponse(theWord, theDefinition) {
-    var theDef = "";
-    for (var index = 2; index < theDefinition.length; index++) {
-        theDef += theDefinition[index];
-    }
-    //var resp1 = "<p> <b>Word: </b>" + theWord +"</p>";
-    var resp1 = "<p>" + theDef + "</p>";
-    return resp1;
 }
 //setups the letters available section of the screen with the list of letters that can be used
 function setupLettersAvailable() {
@@ -176,9 +119,7 @@ function setupLettersAvailable() {
     var li = document.createElement('li');
     li.textContent = "";
     //clear the LI when starting/restarting
-    while (lettersLeft.firstChild) {
-        lettersLeft.removeChild(lettersLeft.firstChild);
-    }
+    clearLiFromList();
     //append the LI back onto the DOM
     lettersLeft.appendChild(li);
     for (var index = 0; index < lettersToUse.length; index++) {
@@ -190,8 +131,8 @@ function setupLettersAvailable() {
     }
     lettersLeft.classList.value = 'lettersLeft';
 }
+//clear the LI when starting/restarting
 function clearLiFromList() {
-    //clear the LI when starting/restarting
     while (lettersLeft.firstChild) {
         lettersLeft.removeChild(lettersLeft.firstChild);
     }
@@ -267,14 +208,21 @@ function isLetterInWord(playedLetter) {
     }
     //Loop through the word to use and create a nice set of fields
     cleanUpHiddenWord();
+    var imgLink = "../images/" + wrongGuessCount + ".jpg";
+    document.getElementById("hangman").innerHTML = formatImage(imgLink);
     if (allLetterSlotsFilled()) {
         window.alert("Congratulations, you solved the word");
-        newGame();
+        //newGame();
     }
     if (maxWrongGuess == wrongGuessCount) {
         window.alert("Sorry, max number of wrong guesses met for word > " + wordInfo);
-        newGame();
+        //newGame();
     }
+}
+function formatImage(string) {
+    var link = '<img src=' + string + ' style="width:150px;">';
+    link += '<br> <br> ' + wrongGuessCount + ' of ' + maxWrongGuess + ' wrong tries';
+    return link;
 }
 function cleanUpHiddenWord() {
     var displayed = "";
@@ -300,7 +248,57 @@ function validateLetters(x) {
     var pattern = /^[A-Za-z]+$/;
     return str.match(pattern);
 }
-function removeSlashes(x) {
-    x = x.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
-    return x;
+function getWordDefinition(theWord) {
+    return __awaiter(this, void 0, void 0, function () {
+        var apiURL2, defResponse, defObj, theDef, defObString, prsed, para, theQuoteInfo;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    apiURL2 = "https://api.datamuse.com/words?sp=" + theWord + "&md=d";
+                    return [4 /*yield*/, fetch(apiURL2)];
+                case 1:
+                    defResponse = _a.sent();
+                    theDef = "";
+                    if (!(defResponse.status >= 200 && defResponse.status <= 299)) return [3 /*break*/, 3];
+                    return [4 /*yield*/, defResponse.json()];
+                case 2:
+                    defObj = _a.sent();
+                    return [3 /*break*/, 4];
+                case 3:
+                    alert("failed call" + defObj.status + " status text " + defObj.statusText);
+                    return [2 /*return*/, ""];
+                case 4:
+                    defObString = JSON.stringify(defObj);
+                    prsed = JSON.parse(defObString);
+                    for (para in prsed) {
+                        theDef = prsed[para].defs;
+                        try {
+                            theDef = theDef.toString().replace(/(\r\n|\n|\r|\,n)/gm, " ");
+                        }
+                        catch (error) {
+                            theDef = "";
+                        }
+                        break;
+                    }
+                    if (theDef == "") {
+                        theDef = "No definition found";
+                        document.getElementById("definition").innerHTML = theDef;
+                    }
+                    else {
+                        theQuoteInfo = createResponse(theWord, theDef);
+                        document.getElementById("definition").innerHTML = theQuoteInfo;
+                    }
+                    return [2 /*return*/, theDef];
+            }
+        });
+    });
+}
+function createResponse(theWord, theDefinition) {
+    var theDef = "";
+    for (var index = 2; index < theDefinition.length; index++) {
+        theDef += theDefinition[index];
+    }
+    //var resp1 = "<p> <b>Word: </b>" + theWord +"</p>";
+    var resp1 = "<p>" + theDef + "</p>";
+    return resp1;
 }

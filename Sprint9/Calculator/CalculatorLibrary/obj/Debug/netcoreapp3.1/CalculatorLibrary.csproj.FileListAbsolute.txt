@@ -1,0 +1,9 @@
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\bin\Debug\netcoreapp3.1\CalculatorLibrary.deps.json
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\bin\Debug\netcoreapp3.1\CalculatorLibrary.dll
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\bin\Debug\netcoreapp3.1\CalculatorLibrary.pdb
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.AssemblyInfo.cs
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.dll
+C:\Coding-Academy\Sprint9\Calculator\CalculatorLibrary\obj\Debug\netcoreapp3.1\CalculatorLibrary.pdb

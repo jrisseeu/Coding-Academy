@@ -1,0 +1,13 @@
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\bin\Debug\netcoreapp3.1\ClassRoster.exe
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\bin\Debug\netcoreapp3.1\ClassRoster.deps.json
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\bin\Debug\netcoreapp3.1\ClassRoster.runtimeconfig.json
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\bin\Debug\netcoreapp3.1\ClassRoster.runtimeconfig.dev.json
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\bin\Debug\netcoreapp3.1\ClassRoster.dll
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\bin\Debug\netcoreapp3.1\ClassRoster.pdb
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.AssemblyInfo.cs
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.dll
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.pdb
+C:\Coding-Academy\Sprint9\ClassRoster\ClassRoster\obj\Debug\netcoreapp3.1\ClassRoster.genruntimeconfig.cache

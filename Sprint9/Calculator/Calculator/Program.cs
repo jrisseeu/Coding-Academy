@@ -13,36 +13,23 @@ namespace CalculatorProgram
             Console.WriteLine("------------------------\n");
 
             Calculator calculator = new Calculator();
-            
+            CalulatorOption calcOption = new CalulatorOption();
+
+
             while (!endApp) {
                 // Declare variables and set to empty.
                 double result = 0;
 
-
                 double cleanNum1 = getUserInputNumber("first");
                 double cleanNum2 = getUserInputNumber("second");
+                String op = calcOption.requestOptionSelection();
 
-                // Ask the user to choose an operator.
-                Console.WriteLine("Choose an operator from the following list:");
-                Console.WriteLine("\ta - Add");
-                Console.WriteLine("\ts - Subtract");
-                Console.WriteLine("\tm - Multiply");
-                Console.WriteLine("\td - Divide");
-                Console.Write("Your option? ");
-
-                string op = Console.ReadLine().ToLower();
-
-                try
-                {
+                try {
                     result = calculator.DoOperation(cleanNum1, cleanNum2, op);
-                    if (double.IsNaN(result))
-                    {
+                    if (double.IsNaN(result)) {
                         Console.WriteLine("This operation will result in a mathematical error.\n");
-                    }
-                    else Console.WriteLine("Your result: {0:0.##}\n", result);
-                }
-                catch (Exception e)
-                {
+                    } else Console.WriteLine("Your result: {0:0.##}\n", result);
+                } catch (Exception e) {
                     Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
                 }
 

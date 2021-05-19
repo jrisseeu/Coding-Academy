@@ -1,0 +1,13 @@
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.AssemblyInfo.cs
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\bin\Debug\netcoreapp3.1\GameCollection.exe
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\bin\Debug\netcoreapp3.1\GameCollection.deps.json
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\bin\Debug\netcoreapp3.1\GameCollection.runtimeconfig.json
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\bin\Debug\netcoreapp3.1\GameCollection.runtimeconfig.dev.json
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\bin\Debug\netcoreapp3.1\GameCollection.dll
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\bin\Debug\netcoreapp3.1\GameCollection.pdb
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.dll
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.pdb
+C:\Coding-Academy\Sprint9\GameCollection\GameCollection\obj\Debug\netcoreapp3.1\GameCollection.genruntimeconfig.cache

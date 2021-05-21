@@ -1,0 +1,13 @@
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.AssemblyInfo.cs
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\bin\Debug\netcoreapp3.1\GameCollectionMVC.exe
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\bin\Debug\netcoreapp3.1\GameCollectionMVC.deps.json
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\bin\Debug\netcoreapp3.1\GameCollectionMVC.runtimeconfig.json
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\bin\Debug\netcoreapp3.1\GameCollectionMVC.runtimeconfig.dev.json
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\bin\Debug\netcoreapp3.1\GameCollectionMVC.dll
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\bin\Debug\netcoreapp3.1\GameCollectionMVC.pdb
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.dll
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.pdb
+C:\Coding-Academy\Sprint10\GameCollectionMVC\GameCollectionMVC\obj\Debug\netcoreapp3.1\GameCollectionMVC.genruntimeconfig.cache

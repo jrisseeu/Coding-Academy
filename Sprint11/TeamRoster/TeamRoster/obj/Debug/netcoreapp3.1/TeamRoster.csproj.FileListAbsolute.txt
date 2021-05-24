@@ -1,0 +1,13 @@
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.AssemblyInfo.cs
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\bin\Debug\netcoreapp3.1\TeamRoster.exe
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\bin\Debug\netcoreapp3.1\TeamRoster.deps.json
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\bin\Debug\netcoreapp3.1\TeamRoster.runtimeconfig.json
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\bin\Debug\netcoreapp3.1\TeamRoster.runtimeconfig.dev.json
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\bin\Debug\netcoreapp3.1\TeamRoster.dll
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\bin\Debug\netcoreapp3.1\TeamRoster.pdb
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.dll
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.pdb
+C:\Coding-Academy\Sprint11\TeamRoster\TeamRoster\obj\Debug\netcoreapp3.1\TeamRoster.genruntimeconfig.cache

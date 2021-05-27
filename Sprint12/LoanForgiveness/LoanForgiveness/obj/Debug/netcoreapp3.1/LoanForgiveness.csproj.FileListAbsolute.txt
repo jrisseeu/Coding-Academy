@@ -1,0 +1,13 @@
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.AssemblyInfo.cs
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\bin\Debug\netcoreapp3.1\LoanForgiveness.exe
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\bin\Debug\netcoreapp3.1\LoanForgiveness.deps.json
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\bin\Debug\netcoreapp3.1\LoanForgiveness.runtimeconfig.json
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\bin\Debug\netcoreapp3.1\LoanForgiveness.runtimeconfig.dev.json
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\bin\Debug\netcoreapp3.1\LoanForgiveness.dll
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\bin\Debug\netcoreapp3.1\LoanForgiveness.pdb
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.dll
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.pdb
+C:\Coding-Academy\Sprint12\LoanForgiveness\LoanForgiveness\obj\Debug\netcoreapp3.1\LoanForgiveness.genruntimeconfig.cache

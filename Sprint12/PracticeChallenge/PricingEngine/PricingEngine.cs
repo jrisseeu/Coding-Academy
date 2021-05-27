@@ -28,22 +28,16 @@ namespace PricingEngineApp
 
             decimal discountPercent = 0.00m;
 
-            if (retailPrice >= 1.00m)
-            {
-                if (quantity > 10)
-                {
-                    if (quantity > 20)
-                    {
+            if (retailPrice > 1.00m)        {
+                if (quantity > 10)               {
+                    if (quantity > 20)                     {
                         discountPercent = 0.20m;
-                    }
-                    else
-                    {
+                    }  else                    {
                         discountPercent = 0.10m;
                     }
                 }
 
-                if (_holiday & (quantity * (retailPrice * (1.00m - discountPercent)) > _holidayDiscountAmount))
-                {
+                if (_holiday & (quantity * (retailPrice * (1.00m - discountPercent)) > _holidayDiscountAmount))              {
                     discountPercent += _holidayDiscountPercent;
                 }
             }

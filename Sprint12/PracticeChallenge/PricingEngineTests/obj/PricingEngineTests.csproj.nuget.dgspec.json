@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj": {}
+    "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj": {}
   },
   "projects": {
-    "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj": {
+    "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj",
+        "projectUniqueName": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj",
         "projectName": "PricingEngineTests",
-        "projectPath": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj",
+        "projectPath": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngineTests\\PricingEngineTests.csproj",
         "packagesPath": "C:\\Users\\jrisseeu\\.nuget\\packages\\",
-        "outputPath": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngineTests\\obj\\",
+        "outputPath": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngineTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jrisseeu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,14 +21,15 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj": {
-                "projectPath": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj"
+              "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj": {
+                "projectPath": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj"
               }
             }
           }
@@ -79,14 +80,14 @@
         }
       }
     },
-    "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj": {
+    "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj",
+        "projectUniqueName": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj",
         "projectName": "PricingEngineApp",
-        "projectPath": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj",
+        "projectPath": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngineApp.csproj",
         "packagesPath": "C:\\Users\\jrisseeu\\.nuget\\packages\\",
-        "outputPath": "C:\\Coding-Academy\\TransitionAcademy\\Stage1\\Sprint12\\PracticeChallenge\\PricingEngine\\obj\\",
+        "outputPath": "C:\\Coding-Academy\\Sprint12\\PracticeChallenge\\PricingEngine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jrisseeu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,7 +97,8 @@
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

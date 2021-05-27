@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Sprint12",
+    "\\Sprint12\\PracticeChallenge",
+    "\\Sprint12\\PracticeChallenge\\PricingEngine"
   ],
-  "SelectedNode": "\\Bank.sln",
+  "SelectedNode": "\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngine.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team Roster</title>
+        <link rel="stylesheet" href="css/site.css" />
+    </head>
+    <body>
+
+        <h1>Team Roster Maintenance</h1>
+        <h3>Add Team</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addTeam()">
+            <input type="text" id="add-team" placeholder="Team Name">
+            <input type="text" id="add-sport" placeholder="Sport">
+            <input type="text" id="add-season" placeholder="Season">
+            <input type="submit" value="Add">
+        </form>
+
+        <br />
+
+        <div id="editForm">
+            <h3>Edit Team</h3>
+            <form action="javascript:void(0);" onsubmit="updateTeam()">
+                <input type="hidden" id="edit-teamId">
+                <input type="text" id="edit-teamName">
+                <input type="text" id="edit-sportName">
+                <input type="text" id="edit-season">
+                <input type="submit" value="Save">
+                <a onclick="closeTeamInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+
+        <br />
+        <table>
+            <tr>
+                <th>Team Name</th>
+                <th>Sport</th>
+                <th>Season</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="teams"></tbody>
+        </table>
+
+
+
+
+        <script src="js/team.js" asp-append-version="true"></script>
+        <script type="text/javascript">
+            getTeams();
+        </script>
+
+    </body>
+</html>

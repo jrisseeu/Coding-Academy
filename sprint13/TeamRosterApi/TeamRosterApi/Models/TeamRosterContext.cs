@@ -7,14 +7,11 @@ namespace TeamRosterApi.Models {
             : base(options) {
         }
 
-        public DbSet<TeamAndRosterModel> TeamInfo {
-            get; set;
-        }
-
         public DbSet<TeamRosterApi.ParentModel> ParentModel { get; set; }
 
         public DbSet<TeamRosterApi.PlayerModel> PlayerModel { get; set; }
 
         public DbSet<TeamRosterApi.TeamModel> TeamModel { get; set; }
+             
     }
 }

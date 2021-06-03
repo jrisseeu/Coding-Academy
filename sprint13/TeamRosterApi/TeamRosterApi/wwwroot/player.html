@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team Players</title>
+        <link rel="stylesheet" href="css/site.css" />
+    </head>
+    <body>
+
+
+        <h1>Team Player Maintenance</h1>
+        <h3>Add Player</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addPlayer()">
+            <input type="text" id="add-playerFname" placeholder="Player First Name">
+            <input type="text" id="add-playerLname" placeholder="Player Last Name">
+            <input type="submit" value="Add">
+        </form>
+
+        <br />
+
+        <div id="editPlayerForm">
+            <h3>Edit Player</h3>
+            <form action="javascript:void(0);" onsubmit="updatePlayer()">
+                <input type="hidden" id="edit-teamId">
+                <input type="hidden" id="edit-playerId">
+                <input type="text" id="edit-firstNm">
+                <input type="text" id="edit-lastNm">
+                <input type="submit" value="Save">
+                <a onclick="closePlayerInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+
+        <br />
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tbody id="players"></tbody>
+        </table>
+
+        <br />
+
+        <button type="button" onclick="closePlayerWindow()">Go back to teams</button>
+
+        <script src="js/player.js" asp-append-version="true"></script>
+        <script type="text/javascript">
+            getPlayers();
+        </script>
+
+    </body>
+</html>

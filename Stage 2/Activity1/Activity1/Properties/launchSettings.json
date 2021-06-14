@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Activities": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}

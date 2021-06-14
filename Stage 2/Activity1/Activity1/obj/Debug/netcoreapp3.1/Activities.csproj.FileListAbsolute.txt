@@ -1,0 +1,15 @@
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.exe
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.deps.json
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.runtimeconfig.json
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.runtimeconfig.dev.json
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.dll
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.pdb
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.csproj.CopyComplete
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.dll
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.pdb
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.genruntimeconfig.cache

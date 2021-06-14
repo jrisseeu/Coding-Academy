@@ -1,0 +1,13 @@
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activity1.exe
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activity1.deps.json
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activity1.runtimeconfig.json
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activity1.runtimeconfig.dev.json
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activity1.dll
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activity1.pdb
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.dll
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.pdb
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activity1.genruntimeconfig.cache

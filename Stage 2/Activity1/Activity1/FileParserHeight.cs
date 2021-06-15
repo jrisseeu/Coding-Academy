@@ -28,11 +28,11 @@ namespace Activities {
         public void ForEachLoopUnder68(Contact[] contacts)
         {
 
-            var newConactList = from theContact in contacts 
+            var newContactList = from theContact in contacts 
                                 where theContact.Height > 68 
                                 select theContact;
 
-            foreach (Contact contact in newConactList)
+            foreach (Contact contact in newContactList)
             {
                Console.WriteLine($"{contact.FirstName} {contact.LastName} { contact.Height} ");
             }

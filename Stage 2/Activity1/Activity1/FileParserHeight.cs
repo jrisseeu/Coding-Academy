@@ -21,7 +21,10 @@ namespace Activities {
             ForEachLoopUnder68(contacts);
 
         }
-
+        /// <summary>
+        /// Good turorial: https://www.tutorialsteacher.com/linq/linq-query-syntax
+        /// </summary>
+        /// <param name="contacts"></param>
         public void ForEachLoopUnder68(Contact[] contacts)
         {
 

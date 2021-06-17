@@ -1,0 +1,13 @@
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\bin\Debug\netcoreapp3.1\LinqActivity.exe
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\bin\Debug\netcoreapp3.1\LinqActivity.deps.json
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\bin\Debug\netcoreapp3.1\LinqActivity.runtimeconfig.json
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\bin\Debug\netcoreapp3.1\LinqActivity.runtimeconfig.dev.json
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\bin\Debug\netcoreapp3.1\LinqActivity.dll
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\bin\Debug\netcoreapp3.1\LinqActivity.pdb
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.csproj.AssemblyReference.cache
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.AssemblyInfoInputs.cache
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.AssemblyInfo.cs
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.dll
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.pdb
+C:\Coding-Academy\LinqActivity\LinqActivity\LinqActivity\obj\Debug\netcoreapp3.1\LinqActivity.genruntimeconfig.cache

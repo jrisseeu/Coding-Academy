@@ -4,8 +4,8 @@ C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities
 C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.runtimeconfig.dev.json
 C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.dll
 C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Activities.pdb
+C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\CsvHelper.dll
 C:\Coding-Academy\Stage 2\Activity1\Activity1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.csproj.AssemblyReference.cache
 C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.AssemblyInfoInputs.cache
 C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.AssemblyInfo.cs
 C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.csproj.CoreCompileInputs.cache
@@ -13,3 +13,4 @@ C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities
 C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.dll
 C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.pdb
 C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.genruntimeconfig.cache
+C:\Coding-Academy\Stage 2\Activity1\Activity1\obj\Debug\netcoreapp3.1\Activities.csproj.AssemblyReference.cache

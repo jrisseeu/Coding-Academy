@@ -9,7 +9,8 @@ namespace Activities {
 
         static void Main(string[] args) {
 
-            DoActivityThree();
+            //DoActivityThree();
+            DoActivityFour();
         }
 
 
@@ -41,6 +42,16 @@ namespace Activities {
             aParser.ReadContactJsonFile();
 
             
+        }
+
+        public static void DoActivityFour()
+        {
+
+            FileParserBizAndContacts aParser = new FileParserBizAndContacts();
+
+            //aParser.startProcess();
+            //aParser.startProcess3();
+            aParser.startProcess4();
         }
 
 

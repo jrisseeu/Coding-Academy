@@ -1,6 +1,7 @@
 ﻿using System;
-using Newtonsoft.Json;
 using CsvHelper.Configuration.Attributes;
+using System.Linq;
+
 
 
 namespace Activities {

@@ -4,14 +4,15 @@
 namespace Activities {
 
 
-    class Program {
+    static class Program {
 
 
         static void Main(string[] args) {
 
             //DoActivityThree();
             //DoActivityFour();
-            DoActivityFive();
+           DoActivityFive();
+           
         }
 
 
@@ -52,7 +53,7 @@ namespace Activities {
 
             //aParser.startProcess();
             //aParser.startProcess3();
-            aParser.startProcess4();
+            //aParser.startProcess4();
         }
 
 
@@ -63,8 +64,8 @@ namespace Activities {
 
             //aParser.startActivity();
             //aParser.startActivityPart2();
-            aParser.startActivityPart3();
-            //aParser.startActivityPart4();
+            //aParser.startActivityPart3();
+            aParser.startActivityPart4();
         }
 
     }

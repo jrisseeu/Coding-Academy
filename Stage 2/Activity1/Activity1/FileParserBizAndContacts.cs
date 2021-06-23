@@ -24,10 +24,21 @@ namespace Activities {
             foreach (var link in links) {
 
                 var biz = business.Where(theBiz => theBiz.Id == link.BusinessId).FirstOrDefault();
-                var ctc = contacts.Where(theCtc => theCtc.Id == link.ContactId).FirstOrDefault();
-                int bizIndex = Array.IndexOf(business, biz);
 
-                business[bizIndex].Contacts.Add(ctc);
+                //second option (returns a business object)
+                //var biz2 = business.FirstOrDefault(b => b.Id == link.BusinessId);
+
+                //third option (returns a business object)
+                //var biz3 = business.Where(b => b.Id == link.BusinessId).Select(b => b).FirstOrDefault();
+
+                //fourth option (returns an array)
+                //var biz4 = business.Where(b => b.Id == link.BusinessId).Select(b => b).ToArray();
+
+
+                var ctc = contacts.Where(theCtc => theCtc.Id == link.ContactId).FirstOrDefault();
+
+                //Add the contact to the business
+                biz.Contacts.Add(ctc);
 
             }
 
@@ -35,10 +46,9 @@ namespace Activities {
                 if (biz.Contacts.Count > 0) {
                     Console.WriteLine($"Business has at least 1 contact: {biz.Id } { biz.Name }  Count =  { biz.Contacts.Count} ");
                 }
-            }
 
-            foreach (var biz in business) {
-                if (biz.Contacts.Count >= 50) {
+                if (biz.Contacts.Count >= 50)
+                {
                     Console.WriteLine($"Business has at least 50 contacts: {biz.Id } { biz.Name }  Count =  { biz.Contacts.Count} ");
                 }
             }
@@ -57,18 +67,14 @@ namespace Activities {
             }
 
             foreach (KeyValuePair<int, Business> biz in business) {
-                if (biz.Value.Contacts.Count > 0){
+                if (biz.Value.Contacts.Count > 0) {
                     Console.WriteLine($"Business has at least 1 contact: {biz.Value.Id } { biz.Value.Name }  Count =  { biz.Value.Contacts.Count} ");
                 }
-            }
 
-            foreach (KeyValuePair<int, Business> biz in business) {
-                if (biz.Value.Contacts.Count >= 50){
+                if (biz.Value.Contacts.Count >= 50) {
                     Console.WriteLine($"Business has at least 50 contacts: {biz.Value.Id } { biz.Value.Name }  Count =  { biz.Value.Contacts.Count} ");
                 }
             }
-
-
         }
 
         public void startProcess4() {
@@ -80,7 +86,7 @@ namespace Activities {
             foreach (var link in links) {
                 if (business.TryGetValue(link.BusinessId, out Business currBiz)) {
                     if (contacts.TryGetValue(link.ContactId, out BusinessContact currCtc)){
-                        currBiz.addContact(currCtc);
+                        currBiz.Contacts.Add(currCtc);
                     }
                 }
             }
@@ -89,9 +95,7 @@ namespace Activities {
                 if (biz.Value.Contacts.Count > 0) {
                     Console.WriteLine($"Business has at least 1 contact: {biz.Value.Id } { biz.Value.Name }  Count =  { biz.Value.Contacts.Count} ");
                 }
-            }
 
-            foreach (KeyValuePair<int, Business> biz in business) {
                 if (biz.Value.Contacts.Count >= 50) {
                     Console.WriteLine($"Business has at least 50 contacts: {biz.Value.Id } { biz.Value.Name }  Count =  { biz.Value.Contacts.Count} ");
                 }
@@ -125,12 +129,16 @@ namespace Activities {
 
             using var reader = new StreamReader(contactsFileName);
             using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-            var contacts = csv.GetRecords<BusinessContact>().ToArray();
-            Dictionary<int, BusinessContact> busContactDictionary = new Dictionary<int, BusinessContact>();
 
-            foreach (var ctc in contacts ){
-                busContactDictionary.Add(ctc.Id, ctc);
-            }
+            //Option 1 to read and create dictionary
+            //var contacts = csv.GetRecords<BusinessContact>().ToArray();
+            //Dictionary<int, BusinessContact> busContactDictionary = new Dictionary<int, BusinessContact>();
+            //foreach (var ctc in contacts ){
+            //    busContactDictionary.Add(ctc.Id, ctc);
+            // }
+
+            //Option 2
+            Dictionary<int, BusinessContact> busContactDictionary = csv.GetRecords<BusinessContact>().ToDictionary(x => x.Id);
 
             return busContactDictionary;
         }
@@ -139,12 +147,16 @@ namespace Activities {
 
             using var reader = new StreamReader(businessFileName);
             using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
-            var businesses = csv.GetRecords<Business>().ToArray();
-            Dictionary<int, Business> businessDictionary = new Dictionary<int, Business>();
 
-            foreach (var biz in businesses) {
-                businessDictionary.Add(biz.Id, biz);
-            }
+            //Option 1 to read and create dictionary
+            //var businesses = csv.GetRecords<Business>().ToArray();
+            //Dictionary<int, Business> businessDictionary = new Dictionary<int, Business>();
+            //foreach (var biz in businesses) {
+            //    businessDictionary.Add(biz.Id, biz);
+            // }
+
+            //Option 2
+            Dictionary<int, Business> businessDictionary = csv.GetRecords<Business>().ToDictionary(x => x.Id);
 
             return businessDictionary;
 

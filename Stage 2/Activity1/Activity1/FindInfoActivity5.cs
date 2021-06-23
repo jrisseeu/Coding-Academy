@@ -29,9 +29,7 @@ namespace Activities {
             foreach (var link in links) {
                 var biz = business.Where(theBiz => theBiz.Id == link.BusinessId).FirstOrDefault();
                 var ctc = contacts.Where(theCtc => theCtc.Id == link.ContactId).FirstOrDefault();
-                int bizIndex = Array.IndexOf(business, biz);
-
-                business[bizIndex].Contacts.Add(ctc);
+                biz.Contacts.Add(ctc);
             }
            
             var edgePulse = business.Where(b => b.Name == bizToFind);
@@ -53,9 +51,7 @@ namespace Activities {
             foreach (var link in links) {
                 var biz = business.Where(theBiz => theBiz.Id == link.BusinessId).FirstOrDefault();
                 var ctc = contacts.Where(theCtc => theCtc.Id == link.ContactId).FirstOrDefault();
-                int bizIndex = Array.IndexOf(business, biz);
-
-                business[bizIndex].Contacts.Add(ctc);
+                biz.Contacts.Add(ctc);
             }
 
             var edgePulse = business.Where(b => b.Name.ToLower().Contains(bizToFind2.ToLower()));
@@ -77,9 +73,7 @@ namespace Activities {
             foreach (var link in links) {
                 var biz = business.Where(theBiz => theBiz.Id == link.BusinessId).FirstOrDefault();
                 var ctc = contacts.Where(theCtc => theCtc.Id == link.ContactId).FirstOrDefault();
-                int bizIndex = Array.IndexOf(business, biz);
-
-                business[bizIndex].Contacts.Add(ctc);
+                biz.Contacts.Add(ctc);
             }
 
             foreach (var aBiz in business) {

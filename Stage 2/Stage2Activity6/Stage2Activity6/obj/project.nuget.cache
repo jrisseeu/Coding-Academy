@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "myPUH5EHJdODgNrbveg6llr1wOSTtxTOVWiQuLTtY0WMVNJ08EPMge6BfqXqGNXvH9E5v57sahYxX8lO1TYFJw==",
+  "success": true,
+  "projectFilePath": "C:\\Coding-Academy\\Stage 2\\Stage2Activity6\\Stage2Activity6\\Stage2Activity6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\csvhelper\\27.1.0\\csvhelper.27.1.0.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

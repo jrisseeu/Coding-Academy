@@ -1,4 +1,5 @@
-﻿using DPLRef.eCommerce.Accessors.Sales;
+﻿using DPLRef.eCommerce.Accessors.Catalog;
+using DPLRef.eCommerce.Accessors.Sales;
 using DPLRef.eCommerce.Contracts.WebStore.Sales;
 using System;
 
@@ -18,7 +19,14 @@ namespace DPLRef.eCommerce.Engines.Sales
                 var taxRate = AccessorFactory.CreateAccessor<ITaxRateAccessor>().Rate(cart.BillingAddress);
 
                 foreach (var item in cart.CartItems) {
-                    cart.TaxAmount += Math.Round(item.ExtendedPrice * taxRate, 2); 
+
+                    bool download = AccessorFactory.CreateAccessor<ICatalogAccessor>().FindProduct(item.ProductId).IsDownloadable;
+
+                    if (!download) {
+                        cart.TaxAmount += Math.Round(item.ExtendedPrice * taxRate, 2);
+                    } else {
+                        cart.TaxAmount += Decimal.Zero;
+                    }
                 }
             }
             // update the cart total with the tax amount

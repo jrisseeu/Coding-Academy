@@ -40,6 +40,7 @@ namespace DPLRef.eCommerce.Tests.EngineTests
                         UnitPrice = 5.99m,
                         Quantity = 2,
                         ExtendedPrice = 10.00m
+                        
                     },
                     new WebStoreCartItem()
                     {

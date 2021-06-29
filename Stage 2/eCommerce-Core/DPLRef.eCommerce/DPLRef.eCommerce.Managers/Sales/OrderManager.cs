@@ -8,6 +8,7 @@ using DPLRef.eCommerce.Contracts.Admin.Sales;
 using WebStore = DPLRef.eCommerce.Contracts.WebStore.Sales;
 using DPLRef.eCommerce.Engines.Sales;
 using DPLRef.eCommerce.Utilities;
+using DPLRef.eCommerce.Accessors.Catalog;
 
 namespace DPLRef.eCommerce.Managers.Sales
 {
@@ -103,8 +104,8 @@ namespace DPLRef.eCommerce.Managers.Sales
             }
         }
 
-        private WebStore.WebStoreCart GenerateCartPricingAndTax(Cart storedCart)
-        {
+        private WebStore.WebStoreCart GenerateCartPricingAndTax(Cart storedCart) {
+
             // Generate the pricing for the cart (current product prices, coupon discounts, volume discounts
             ICartPricingEngine pricingEngine = EngineFactory.CreateEngine<ICartPricingEngine>();
             WebStore.WebStoreCart result = pricingEngine.GenerateCartPricing(storedCart);

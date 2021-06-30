@@ -111,11 +111,23 @@ namespace DPLRef.eCommerce.Tests.ManagerTests
             Assert.AreEqual("No orders", totals.Message);
         }
 
-        #endregion
-
-        #region Admin
-
         [TestMethod]
+        [TestCategory("Managers-WebStore")]
+        public void RemittanceManager_BackOffice_SalesTax() { 
+            
+            var mgr = GetBackOfficeManager(); 
+            var tax = mgr.RecentSalesTax("68508");
+            Assert.AreEqual(5.0M, tax); 
+
+        }
+
+
+
+    #endregion
+
+    #region Admin
+
+    [TestMethod]
         [TestCategory("Managers-WebStore")]
         public void RemittanceManager_Totals()
         {

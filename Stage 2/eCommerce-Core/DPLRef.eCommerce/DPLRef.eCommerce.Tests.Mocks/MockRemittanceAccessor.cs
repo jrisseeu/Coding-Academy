@@ -24,5 +24,9 @@ namespace DPLRef.eCommerce.Tests.Mocks
         {
             return input;
         }
+
+        public decimal SalexTax(string zipCode, DateTime start, DateTime end) {
+            return 5.00M;
+        }
     }
 }

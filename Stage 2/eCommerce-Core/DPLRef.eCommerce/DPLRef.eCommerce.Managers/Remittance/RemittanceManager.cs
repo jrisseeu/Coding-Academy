@@ -132,8 +132,18 @@ namespace DPLRef.eCommerce.Managers.Remittance
             }
         }
 
+        public decimal RecentSalesTax(string zipCode) {
+
+            if (UtilityFactory.CreateUtility<ISecurityUtility>().BackOfficeAdminAuthenticated()) {
+                return AccessorFactory.CreateAccessor<IRemittanceAccessor>().SalexTax(zipCode, DateTime.Now.AddDays(-30), DateTime.Now.AddDays(1));
+            }
+            
+            return 0.0M;
+
+        }
+
         #endregion
-        
+
 
     }
 }

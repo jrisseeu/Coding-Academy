@@ -5,5 +5,7 @@ namespace DPLRef.eCommerce.Contracts.BackOfficeAdmin.Remittance
     public interface IBackOfficeRemittanceManager : IServiceContractBase
     {
         OrderDataResponse Totals();
+
+        decimal RecentSalesTax(string zipCode);
     }
 }

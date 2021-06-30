@@ -59,5 +59,19 @@ namespace DPLRef.eCommerce.Accessors.Remittance
 
             return result.ToArray();
         }
+
+        public decimal SalexTax(string zipCode, DateTime start, DateTime end) {
+
+            using var db = eCommerce.Accessors.EntityFramework.eCommerceDbContext.Create(); {
+                //("select TaxAmount  from Orders where ShippingPostal = 68508 and CreatedAt >= '2021-06-01' and CreatedAt < '2021-07-01'");
+
+                var taxAmt = from o in db.Orders
+                             where o.ShippingPostal == zipCode && o.CreatedAt >= start && o.CreatedAt < end
+                             select new { o.TaxAmount };
+
+                var sum = taxAmt.ToList().Select(s => s.TaxAmount).Sum();
+                return sum;
+            }
+        }
     }
 }

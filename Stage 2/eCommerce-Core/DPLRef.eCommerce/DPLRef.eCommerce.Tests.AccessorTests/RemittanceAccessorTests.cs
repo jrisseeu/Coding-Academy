@@ -2,6 +2,7 @@
 using DPLRef.eCommerce.Common.Contracts;
 using System.Linq;
 using DPLRef.eCommerce.Accessors.DataTransferObjects;
+using System;
 
 namespace DPLRef.eCommerce.Tests.AccessorTests
 {
@@ -74,5 +75,54 @@ namespace DPLRef.eCommerce.Tests.AccessorTests
 
             Assert.AreEqual(beforeOrderDataCount + 1, afterOrderDataCount);
         }
+
+        [TestMethod]
+        [TestCategory("Accessor Tests")]
+        public void RemittanceAccessor_TaxAmount()
+        {
+            var order = new Order()
+            {
+                BillingAddress = new Address()
+                {
+                    First = "Bob",
+                    Last = "Smith",
+                    EmailAddress = "bob.smith@dontpaniclabsl.com",
+                    Addr1 = "address1",
+                    City = "Lincoln",
+                    State = "Nebraska",
+                    Postal = "68508",
+                },
+                ShippingAddress = new Address()
+                {
+                    First = "Bob",
+                    Last = "Smith",
+                    EmailAddress = "bob.smith@dontpaniclabsl.com",
+                    Addr1 = "address1",
+                    City = "Lincoln",
+                    State = "Nebraska",
+                    Postal = "68508",
+                },
+                OrderLines = new OrderLine[] {
+            new OrderLine() {
+                ProductId = 1,
+                UnitPrice = 10.0M,
+                ExtendedPrice = 10.0M,
+                Quantity = 1,
+            },
+        },
+                TaxAmount = 0.70M,
+                Total = 10.0M,
+            };
+
+            const int catalogId = 2;
+            var orderAccessor = CreateOrderAccessor();
+            var remittanceAccessor = CreateRemittanceAccessor();
+            var saved = orderAccessor.SaveOrder(catalogId, order);
+
+            var taxAmount = remittanceAccessor.SalexTax("68508", DateTime.Now.AddDays(-30), DateTime.Now.AddDays(1));
+            Assert.IsTrue(taxAmount > 0);
+
+        }
+
     }
 }

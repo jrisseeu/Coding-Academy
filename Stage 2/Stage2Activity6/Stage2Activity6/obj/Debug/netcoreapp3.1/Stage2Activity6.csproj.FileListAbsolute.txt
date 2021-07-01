@@ -1,0 +1,15 @@
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.AssemblyInfo.cs
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\Stage2Activity6.exe
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\Stage2Activity6.deps.json
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\Stage2Activity6.runtimeconfig.json
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\Stage2Activity6.runtimeconfig.dev.json
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\Stage2Activity6.dll
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\Stage2Activity6.pdb
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.csproj.CopyComplete
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.dll
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.pdb
+C:\Coding-Academy\Stage2Activity6\Stage2Activity6\obj\Debug\netcoreapp3.1\Stage2Activity6.genruntimeconfig.cache

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Players Parents</title>
+        <link rel="stylesheet" href="css/site.css" />
+    </head>
+    <body>
+
+        <h1>Player Parent Maintenance</h1>
+        <h3>Add Parent</h3>
+        <form action="javascript:void(0);" method="POST" onsubmit="addParent()">
+            <input type="text" id="add-parentFname" placeholder="Parent First Name">
+            <input type="text" id="add-parentLname" placeholder="Parent Last Name">
+            <input type="submit" value="Add">
+        </form>
+
+        <br />
+
+        <div id="editParentForm">
+            <h3>Edit Parent</h3>
+            <form action="javascript:void(0);" onsubmit="updateParent()">
+                <input type="hidden" id="edit-parentId">
+                <input type="hidden" id="edit-playerId">
+                <input type="text" id="edit-firstNm">
+                <input type="text" id="edit-lastNm">
+                <input type="submit" value="Save">
+                <a onclick="closeParentInput()" aria-label="Close">&#10006;</a>
+            </form>
+        </div>
+
+        <br />
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tbody id="parents"></tbody>
+        </table>
+
+        <br />
+
+        <button type="button" onclick="closeParentWindow()" >Go back to players</button>
+
+
+        <script src="js/parent.js" asp-append-version="true"></script>
+        <script type="text/javascript">
+            getParents();
+        </script>
+
+    </body>
+</html>

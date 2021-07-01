@@ -1,0 +1,13 @@
+C:\Coding-Academy\Sprint11\Playground\Playground\bin\Debug\netcoreapp3.1\Playground.exe
+C:\Coding-Academy\Sprint11\Playground\Playground\bin\Debug\netcoreapp3.1\Playground.deps.json
+C:\Coding-Academy\Sprint11\Playground\Playground\bin\Debug\netcoreapp3.1\Playground.runtimeconfig.json
+C:\Coding-Academy\Sprint11\Playground\Playground\bin\Debug\netcoreapp3.1\Playground.runtimeconfig.dev.json
+C:\Coding-Academy\Sprint11\Playground\Playground\bin\Debug\netcoreapp3.1\Playground.dll
+C:\Coding-Academy\Sprint11\Playground\Playground\bin\Debug\netcoreapp3.1\Playground.pdb
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.csprojAssemblyReference.cache
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.AssemblyInfoInputs.cache
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.AssemblyInfo.cs
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.dll
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.pdb
+C:\Coding-Academy\Sprint11\Playground\Playground\obj\Debug\netcoreapp3.1\Playground.genruntimeconfig.cache

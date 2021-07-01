@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 
 
+
 namespace TeamRoster {
     class TeamInfo {
 
         public List<Person> playerList;
-        public List<Person> playerParentList;
-
+        
         public int teamId {
             get; set;
         }
@@ -27,9 +27,18 @@ namespace TeamRoster {
         
         }
 
+
+        public TeamInfo(int aTeamId, string aTeamName, string aSportName, string aSeason) {
+
+            teamId = aTeamId;
+            teamName = aTeamName;
+            sportName = aSportName;
+            season = aSeason;
+
+        }
         public TeamInfo(string aTeamName, string aSportName, string aSeason) {
 
-            System.Random random = new System.Random();
+            Random random = new Random();
             teamId = random.Next();
             teamName = aTeamName;
             sportName = aSportName;
@@ -43,13 +52,6 @@ namespace TeamRoster {
             }
         }
 
-        public List<Person> PlayerParentList {
-            get {
-                return playerParentList;
-            }
-        }
-        
-
         public void addPlayerToRoster(Person aPlayer) {
 
             if (null == playerList) {
@@ -60,18 +62,6 @@ namespace TeamRoster {
                 playerList.Add(aPlayer);
             }
         
-        }
-
-        public void addParentOfPlayer(Person aPlayer) {
-
-            if (null == playerParentList) {
-                playerParentList = new List<Person>(4);
-                playerParentList.Add(aPlayer);
-            }
-            else {
-                playerParentList.Add(aPlayer);
-            }
-
         }
 
 

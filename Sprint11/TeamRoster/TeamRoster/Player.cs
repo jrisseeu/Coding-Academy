@@ -18,20 +18,21 @@ namespace TeamRoster {
             }
         }
 
-        public void addParentOfPlayer(Person aPlayer) {
+        public void addParentOfPlayer(List<Person> aList) {
 
             if (null == playerParentList) {
                 playerParentList = new List<Person>(4);
-                playerParentList.Add(aPlayer);
             }
-            else {
-                playerParentList.Add(aPlayer);
+
+            foreach (Person aParent in aList) {
+                playerParentList.Add(aParent);
+
             }
 
         }
 
 
-        public Player(Boolean theFeesPaid, string aFirstName, string aLastName) : base(aFirstName, aLastName, "Player") {
+        public Player(int aPersonId, Boolean theFeesPaid, string aFirstName, string aLastName) : base(aPersonId, aFirstName, aLastName, "Player") {
 
             feesPaid = theFeesPaid;
 

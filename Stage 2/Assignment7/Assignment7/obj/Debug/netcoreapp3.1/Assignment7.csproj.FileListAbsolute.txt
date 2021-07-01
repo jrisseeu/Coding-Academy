@@ -1,0 +1,15 @@
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.AssemblyInfoInputs.cache
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.AssemblyInfo.cs
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\Assignment7.exe
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\Assignment7.deps.json
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\Assignment7.runtimeconfig.json
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\Assignment7.runtimeconfig.dev.json
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\Assignment7.dll
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\Assignment7.pdb
+C:\Coding-Academy\Assignment7\Assignment7\bin\Debug\netcoreapp3.1\CsvHelper.dll
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.csproj.CopyComplete
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.dll
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.pdb
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.genruntimeconfig.cache
+C:\Coding-Academy\Assignment7\Assignment7\obj\Debug\netcoreapp3.1\Assignment7.csproj.AssemblyReference.cache

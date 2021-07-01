@@ -4,10 +4,10 @@ C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\bin\Debug\netcoreapp3.1\C
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\bin\Debug\netcoreapp3.1\CalculatorMVC.runtimeconfig.dev.json
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\bin\Debug\netcoreapp3.1\CalculatorMVC.dll
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\bin\Debug\netcoreapp3.1\CalculatorMVC.pdb
-C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.csprojAssemblyReference.cache
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.AssemblyInfoInputs.cache
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.AssemblyInfo.cs
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.csproj.CoreCompileInputs.cache
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.dll
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.pdb
 C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.genruntimeconfig.cache
+C:\Coding-Academy\Sprint10\CalculatorMVC\CalculatorMVC\obj\Debug\netcoreapp3.1\CalculatorMVC.csproj.AssemblyReference.cache

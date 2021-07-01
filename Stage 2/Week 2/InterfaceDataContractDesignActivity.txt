@@ -1,0 +1,19 @@
+
+
+OrderManager
+Namespace:
+Contracts:
+	Show Cart (int cartId)
+	Add Item to Cart (int cartId, int itemId)
+	Update Shipping (int cartId, Address shippingInfo)
+	Update Billing (int cartId, Address billingInfo)
+Data Contracts:
+	Cart
+	CartDTO
+	
+
+************************************************************
+
+	
+
+	

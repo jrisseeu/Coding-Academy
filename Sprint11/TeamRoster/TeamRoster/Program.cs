@@ -3,7 +3,10 @@
 namespace TeamRoster {
     class Program {
         static void Main(string[] args) {
-            TeamRosterController exec = new TeamRosterController();
+
+            ILogger logFile = new FileLogger();
+            LoggingService aLog = new LoggingService(logFile);
+            TeamRosterController exec = new TeamRosterController(aLog);
         }
     }
 }

@@ -13,14 +13,12 @@ namespace TeamRoster {
 
         public Person() { }
 
-        public Person( string aFirstName, string aLastName, string aPesonType) {
+        public Person(int aPersonId, string aFirstName, string aLastName, string aPersonType) {
 
-            System.Random random = new System.Random();
-            personId = random.Next();
-
+            personId = aPersonId;
             firstName = aFirstName;
             lastName = aLastName;
-            type = aPesonType;
+            type = aPersonType;
 
         }
 

@@ -183,25 +183,22 @@ namespace TeamRoster {
             return validOption;
         }
 
-        public void printRosterInfo(TeamInfo theTeam) {
+        public void printRosterInfo2(TeamInfo theTeam) {
 
             Console.Clear();
             Console.WriteLine(theTeam.ToString());
 
             //Print the player
-            foreach (Person aPlayer in theTeam.PlayerList) {
+            foreach (Player aPlayer in theTeam.PlayerList) {
                 Console.WriteLine(aPlayer.ToString());
 
-            }
+                foreach (Person aParent in aPlayer.PlayerParentList) {
+                    Console.WriteLine(aParent.ToString());
 
-            //Print the player
-            foreach (Person aParent in theTeam.PlayerParentList) {
-                Console.WriteLine(aParent.ToString());
-
+                }
             }
+            
         }
-
-
 
     }
 }

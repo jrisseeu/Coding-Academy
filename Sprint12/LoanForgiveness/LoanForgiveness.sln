@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanForgiveness", "LoanForgiveness\LoanForgiveness.csproj", "{20D7FA8E-A9C0-464D-A203-FC855BF6ACDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanForgivenessTest", "LoanForgivenessTest\LoanForgivenessTest.csproj", "{9CC71DA9-C60D-48E0-A0A3-CAD213CE0EBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20D7FA8E-A9C0-464D-A203-FC855BF6ACDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D7FA8E-A9C0-464D-A203-FC855BF6ACDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D7FA8E-A9C0-464D-A203-FC855BF6ACDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D7FA8E-A9C0-464D-A203-FC855BF6ACDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC71DA9-C60D-48E0-A0A3-CAD213CE0EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC71DA9-C60D-48E0-A0A3-CAD213CE0EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC71DA9-C60D-48E0-A0A3-CAD213CE0EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC71DA9-C60D-48E0-A0A3-CAD213CE0EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0A12D49-3E98-4B8D-ACDC-3B09D5631D88}
+	EndGlobalSection
+EndGlobal

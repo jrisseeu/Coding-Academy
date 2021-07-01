@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Clients", "1. Clients", "{D3311E3A-99CD-40AD-8910-3837ACD3DDB8}"
 EndProject
@@ -87,6 +87,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 	ProjectSection(SolutionItems) = preProject
 		_Documentation\Requirements\Stories.xlsx = _Documentation\Requirements\Stories.xlsx
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStoreApi", "WebStoreApi\WebStoreApi.csproj", "{04053CBF-3120-410F-8FB1-34C75B3018FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -215,6 +217,12 @@ Global
 		{67FEEB70-B216-4F80-8CFA-D0FD6772B7E9}.eCommerceDatabaseSqlite|Any CPU.Build.0 = Release|Any CPU
 		{67FEEB70-B216-4F80-8CFA-D0FD6772B7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67FEEB70-B216-4F80-8CFA-D0FD6772B7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04053CBF-3120-410F-8FB1-34C75B3018FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04053CBF-3120-410F-8FB1-34C75B3018FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04053CBF-3120-410F-8FB1-34C75B3018FA}.eCommerceDatabaseSqlite|Any CPU.ActiveCfg = Debug|Any CPU
+		{04053CBF-3120-410F-8FB1-34C75B3018FA}.eCommerceDatabaseSqlite|Any CPU.Build.0 = Debug|Any CPU
+		{04053CBF-3120-410F-8FB1-34C75B3018FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04053CBF-3120-410F-8FB1-34C75B3018FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -243,6 +251,7 @@ Global
 		{6B9D8D67-2BD1-4920-8D6E-76F405519422} = {3CE6A71B-094B-40F5-AD1D-43AA13A589A5}
 		{E6F3B874-1FB2-4005-A072-4AB6FF3F3C56} = {3CE6A71B-094B-40F5-AD1D-43AA13A589A5}
 		{6DAB408F-4BED-4E77-A54A-4EE717D4A26D} = {3CE6A71B-094B-40F5-AD1D-43AA13A589A5}
+		{04053CBF-3120-410F-8FB1-34C75B3018FA} = {D3311E3A-99CD-40AD-8910-3837ACD3DDB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5AB22097-8445-4E3D-BCB9-646196DE2CF7}

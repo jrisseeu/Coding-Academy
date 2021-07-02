@@ -8,6 +8,7 @@ using DPLRef.eCommerce.Managers;
 using DPLRef.eCommerce.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using DPLRef.eCommerce.Tests.Mocks;
+using System.Threading.Tasks;
 
 namespace DPLref.eCommerce.Tests.IntegrationTests
 {
@@ -86,6 +87,32 @@ namespace DPLref.eCommerce.Tests.IntegrationTests
             // Compare the response to a static representation of the response
             Assert.AreEqual(expectedJson, responseJson);
         }
+
+        [TestMethod]
+        [TestCategory("Integration-Webstore")]
+        public async Task Webstore_ShowCatalog_Async()
+        {
+            var context = new AmbientContext() { SellerId = 1 };
+            var webStoreCatalogManager = GetManager<IWebStoreCatalogManager>(context);
+            var response = await webStoreCatalogManager.ShowCatalogAsync(1);
+
+            Assert.AreEqual(1000, response.Catalog.Products.Length);
+        }
+
+        [TestMethod]
+        [TestCategory("Integration-Webstore")]
+        public async Task Webstore_ShowCatalogNotFound_Async()
+        {
+            var context = new AmbientContext() { SellerId = 1 };
+            var webStoreCatalogManager = GetManager<IWebStoreCatalogManager>(context);
+            var response = await webStoreCatalogManager.ShowCatalogAsync(-1);
+            string responseJson = StringUtilities.DataContractToJson(response);
+            string expectedJson = StringUtilities.DataContractToJson(WebstoreResponses.CatalogNotFoundResponse);
+
+            // Compare the response to a static representation of the response
+            Assert.AreEqual(expectedJson, responseJson);
+        }
+
 
         [TestMethod]
         [TestCategory("Integration-Webstore")]

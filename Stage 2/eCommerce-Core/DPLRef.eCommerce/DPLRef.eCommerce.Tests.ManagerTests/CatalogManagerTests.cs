@@ -7,6 +7,7 @@ using WebStore = DPLRef.eCommerce.Contracts.WebStore.Catalog;
 using DPLRef.eCommerce.Common.Contracts;
 using DPLRef.eCommerce.Utilities;
 using DPLRef.eCommerce.Tests.Mocks;
+using System.Threading.Tasks;
 
 namespace DPLRef.eCommerce.Tests.ManagerTests
 {
@@ -115,6 +116,48 @@ namespace DPLRef.eCommerce.Tests.ManagerTests
 
             Assert.IsFalse(response.Success);
         }
+
+
+        [TestMethod]
+        [TestCategory("Managers-WebStore")]
+        public async Task CatalogManager_WebStoreShowCatalogEmpty_Async()
+        {
+            var mgr = CreateWebStoreCatalogManager();
+            var response = await mgr.ShowCatalogAsync(3);
+
+            Assert.IsFalse(response.Success);
+            Assert.IsNull(response.Catalog);
+            Assert.AreEqual("Catalog not found", response.Message);
+        }
+
+        [TestMethod]
+        [TestCategory("Managers-WebStore")]
+        public async Task CatalogManager_WebStoreShowCatalog_Async()
+        {
+            var mgr = CreateWebStoreCatalogManager();
+            var response = await mgr.ShowCatalogAsync(1);
+            WebStore.WebStoreCatalog catalog = response.Catalog;
+
+            Assert.IsTrue(response.Success);
+            Assert.AreEqual(1, catalog.Id);
+            Assert.AreEqual(2, catalog.Products.Length);
+            Assert.AreEqual("My Product", catalog.Products[0].Name);
+            Assert.AreEqual("My Second Product", catalog.Products[1].Name);
+            Assert.AreEqual("My Webstore", catalog.Name);
+        }
+
+        [TestMethod]
+        [TestCategory("Managers-WebStore")]
+        public async Task CatalogManager_WebStoreShowCatalog_InternalException_Async()
+        {
+            var mgr = CreateWebStoreCatalogManager();
+
+            var response = await mgr.ShowCatalogAsync (99);
+            WebStore.WebStoreCatalog catalog = response.Catalog;
+
+            Assert.IsFalse(response.Success);
+        }
+
 
         [TestMethod]
         [TestCategory("Managers-WebStore")]

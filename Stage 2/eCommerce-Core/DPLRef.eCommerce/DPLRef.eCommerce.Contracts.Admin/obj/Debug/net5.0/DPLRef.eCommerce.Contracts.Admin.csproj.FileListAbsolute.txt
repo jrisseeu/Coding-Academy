@@ -1,0 +1,17 @@
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.deps.json
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\ref\DPLRef.eCommerce.Contracts.Admin.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.pdb
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Common.Contracts.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Common.Shared.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Common.Shared.pdb
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\bin\Debug\net5.0\DPLRef.eCommerce.Common.Contracts.pdb
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.csproj.CopyComplete
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\ref\DPLRef.eCommerce.Contracts.Admin.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.Admin\obj\Debug\net5.0\DPLRef.eCommerce.Contracts.Admin.pdb

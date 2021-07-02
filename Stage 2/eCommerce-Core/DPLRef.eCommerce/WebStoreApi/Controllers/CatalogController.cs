@@ -5,7 +5,7 @@ using DPLRef.eCommerce.Engines;
 using DPLRef.eCommerce.Managers;
 using DPLRef.eCommerce.Utilities;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Threading.Tasks;
 
 namespace WebStoreApi.Controllers
 {
@@ -22,10 +22,17 @@ namespace WebStoreApi.Controllers
         IWebStoreCatalogManager CatalogManager => ManagerFactory.CreateManager<IWebStoreCatalogManager>();
 
         // GET api/<CatalogController>/1
+        //[HttpGet("{catalogId}")]
+        //public WebStoreCatalogResponse Get(int catalogId)
+        //{
+        //    return CatalogManager.ShowCatalog(catalogId);
+        //}
+
+        // GET api/<CatalogController>/1
         [HttpGet("{catalogId}")]
-        public WebStoreCatalogResponse Get(int catalogId)
+        public Task<WebStoreCatalogResponse> Get(int catalogId)
         {
-            return CatalogManager.ShowCatalog(catalogId);
+            return CatalogManager.ShowCatalogAsync(catalogId);
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using DPLRef.eCommerce.Common.Shared;
+using System.Threading.Tasks;
 
 // ReSharper disable once CheckNamespace
 namespace DPLRef.eCommerce.Contracts.WebStore.Catalog
@@ -11,6 +12,9 @@ namespace DPLRef.eCommerce.Contracts.WebStore.Catalog
         /// </summary>
         /// <returns></returns>
         WebStoreCatalogResponse ShowCatalog(int catalogId);
+
+        Task<WebStoreCatalogResponse> ShowCatalogAsync(int catalogId);
+
 
         /// <summary>
         /// Returns the details of a specific product

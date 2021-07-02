@@ -6,9 +6,8 @@ using System;
 using System.Collections.Generic;
 using DPLRef.eCommerce.Accessors;
 using DPLRef.eCommerce.Accessors.DataTransferObjects;
-using DPLRef.eCommerce.Common.Contracts;
-using DPLRef.eCommerce.Engines;
 using DPLRef.eCommerce.Utilities;
+using System.Threading.Tasks;
 
 namespace DPLRef.eCommerce.Managers.Catalog
 {
@@ -151,6 +150,9 @@ namespace DPLRef.eCommerce.Managers.Catalog
                 };
             }
         }
+
+       
+
 
         Admin.AdminCatalogResponse Admin.IAdminCatalogManager.ShowCatalog(int catalogId)
         {
@@ -297,6 +299,59 @@ namespace DPLRef.eCommerce.Managers.Catalog
                 };
             }
         }
+        /// <summary>
+        /// Async call of the Show Catalog
+        /// </summary>
+        /// <param name="catalogId"></param>
+        /// <returns></returns>
+        async Task<WebStore.WebStoreCatalogResponse> WebStore.IWebStoreCatalogManager.ShowCatalogAsync(int catalogId)
+        {
+            try
+            {
+                // Get the webstore catalog
+                WebStore.WebStoreCatalog result = new WebStore.WebStoreCatalog();
+                ICatalogAccessor catalogAccessor = AccessorFactory.CreateAccessor<ICatalogAccessor>();
+                var accCatalog = await catalogAccessor.FindAsync(catalogId);
+
+                // Get the webstore catalog products
+                if (accCatalog != null)
+                {
+                    DTOMapper.Map(accCatalog, result);
+
+                    var catalogProducts = await catalogAccessor.FindAllProductsForCatalogAsync(catalogId);
+                    List<WebStore.ProductSummary> productList = new List<WebStore.ProductSummary>();
+
+                    foreach (var catalogProduct in catalogProducts)
+                    {
+                        WebStore.ProductSummary product = new WebStore.ProductSummary();
+                        DTOMapper.Map(catalogProduct, product);
+                        productList.Add(product);
+                    }
+                    result.Products = productList.ToArray();
+
+                    return new WebStore.WebStoreCatalogResponse()
+                    {
+                        Success = true,
+                        Catalog = result
+                    };
+                }
+                return new WebStore.WebStoreCatalogResponse()
+                {
+                    Success = false,
+                    Message = "Catalog not found"
+                };
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex);
+                return new WebStore.WebStoreCatalogResponse()
+                {
+                    Success = false,
+                    Message = "There was a problem accessing the catalog"
+                };
+            }
+        }
+
 
         WebStore.WebStoreProductResponse WebStore.IWebStoreCatalogManager.ShowProduct(int catalogId, int productId)
         {

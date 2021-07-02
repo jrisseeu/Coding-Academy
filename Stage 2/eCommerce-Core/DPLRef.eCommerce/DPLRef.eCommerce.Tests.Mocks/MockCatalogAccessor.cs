@@ -92,5 +92,20 @@ namespace DPLRef.eCommerce.Tests.Mocks
         {
             return input;
         }
+
+        Task<Product[]> ICatalogAccessor.FindAllProductsForCatalogAsync(int catalogId)
+        {
+            return Task.FromResult(MockData.Products.Where(p => p.CatalogId == catalogId).ToArray());
+            
+        }
+
+        Task<WebStoreCatalog> ICatalogAccessor.FindAsync(int catalogId)
+        {
+            if (catalogId == 99)
+            {
+                throw new System.Exception();
+            }
+            return Task.FromResult(MockData.Catalogs.FirstOrDefault(p => p.Id == catalogId));
+        }
     }
 }

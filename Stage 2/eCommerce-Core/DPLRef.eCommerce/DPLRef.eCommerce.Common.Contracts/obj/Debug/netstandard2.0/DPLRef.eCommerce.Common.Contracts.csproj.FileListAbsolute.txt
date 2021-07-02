@@ -1,0 +1,9 @@
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\bin\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.deps.json
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\bin\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\bin\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.pdb
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\obj\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\obj\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\obj\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\obj\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.csproj.CoreCompileInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\obj\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.dll
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Contracts\obj\Debug\netstandard2.0\DPLRef.eCommerce.Common.Contracts.pdb

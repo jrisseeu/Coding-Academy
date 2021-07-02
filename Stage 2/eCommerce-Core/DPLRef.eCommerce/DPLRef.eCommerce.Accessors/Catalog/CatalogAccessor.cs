@@ -6,6 +6,7 @@ using DPLRef.eCommerce.Accessors.EntityFramework;
 using AutoMapper.QueryableExtensions;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace DPLRef.eCommerce.Accessors.Catalog
 {
@@ -20,6 +21,27 @@ namespace DPLRef.eCommerce.Accessors.Catalog
                                    join s in db.Sellers on c.SellerId equals s.Id
                                    where c.Id == catalogId
                                    select new CatalogExtended { Catalog = c, SellerName = s.Name }).FirstOrDefault();
+
+            if (catalogExtended != null)
+            {
+                // Using a special Map method for handling the combination of Catalog and Seller fields
+                return DTOMapper.Map(catalogExtended);
+            }
+            return null;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="catalogId"></param>
+        /// <returns></returns>
+        public async Task<WebStoreCatalog> FindAsync(int catalogId)
+        {
+            using var db = eCommerce.Accessors.EntityFramework.eCommerceDbContext.Create();
+
+            var catalogExtended = await (from c in db.Catalogs
+                                   join s in db.Sellers on c.SellerId equals s.Id
+                                   where c.Id == catalogId
+                                   select new CatalogExtended { Catalog = c, SellerName = s.Name }).FirstOrDefaultAsync();
 
             if (catalogExtended != null)
             {
@@ -101,6 +123,17 @@ namespace DPLRef.eCommerce.Accessors.Catalog
                          .ToArray();
             }
         }
+
+        public async Task<Product[]> FindAllProductsForCatalogAsync(int catalogId)
+        {
+            using (var db = eCommerce.Accessors.EntityFramework.eCommerceDbContext.Create())
+            {
+                return (await db.Products
+                         .Where(p => p.CatalogId == catalogId)
+                         .ProjectTo<Product>(DTOMapper.Configuration).ToListAsync()).ToArray();
+            }
+        }
+
 
         public Product FindProduct(int id)
         {

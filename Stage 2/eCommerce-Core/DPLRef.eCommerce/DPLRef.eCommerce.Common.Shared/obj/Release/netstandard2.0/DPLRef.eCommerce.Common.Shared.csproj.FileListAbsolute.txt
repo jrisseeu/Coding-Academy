@@ -1,0 +1,4 @@
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Shared\obj\Release\netstandard2.0\DPLRef.eCommerce.Common.Shared.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Shared\obj\Release\netstandard2.0\DPLRef.eCommerce.Common.Shared.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Shared\obj\Release\netstandard2.0\DPLRef.eCommerce.Common.Shared.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Common.Shared\obj\Release\netstandard2.0\DPLRef.eCommerce.Common.Shared.csproj.CoreCompileInputs.cache

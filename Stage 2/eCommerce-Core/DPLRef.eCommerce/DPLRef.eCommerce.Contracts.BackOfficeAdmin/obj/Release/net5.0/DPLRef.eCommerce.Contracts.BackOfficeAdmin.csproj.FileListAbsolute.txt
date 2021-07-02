@@ -1,0 +1,4 @@
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.BackOfficeAdmin\obj\Release\net5.0\DPLRef.eCommerce.Contracts.BackOfficeAdmin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.BackOfficeAdmin\obj\Release\net5.0\DPLRef.eCommerce.Contracts.BackOfficeAdmin.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.BackOfficeAdmin\obj\Release\net5.0\DPLRef.eCommerce.Contracts.BackOfficeAdmin.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Contracts.BackOfficeAdmin\obj\Release\net5.0\DPLRef.eCommerce.Contracts.BackOfficeAdmin.csproj.CoreCompileInputs.cache

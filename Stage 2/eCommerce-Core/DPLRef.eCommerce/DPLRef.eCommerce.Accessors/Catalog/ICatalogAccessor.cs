@@ -1,5 +1,6 @@
 ﻿using DPLRef.eCommerce.Common.Shared;
 using DPLRef.eCommerce.Accessors.DataTransferObjects;
+using System.Threading.Tasks;
 
 // Cencept : Accessor
 // Sub System : Catalog
@@ -8,6 +9,7 @@ namespace DPLRef.eCommerce.Accessors.Catalog
     public interface ICatalogAccessor : IServiceContractBase
     {
         WebStoreCatalog Find(int catalogId);
+        Task<WebStoreCatalog> FindAsync(int catalogId);
 
         WebStoreCatalog SaveCatalog(WebStoreCatalog catalog);
 
@@ -16,6 +18,8 @@ namespace DPLRef.eCommerce.Accessors.Catalog
         WebStoreCatalog[] FindAllSellerCatalogs();
 
         Product[] FindAllProductsForCatalog(int catalogId);
+
+        Task<Product[]> FindAllProductsForCatalogAsync(int catalogId);
 
         Product FindProduct(int id);
 

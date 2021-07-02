@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "FJpRtmjo4GsrG4k5nqKHwr9aLViQZFEoDQRTFOny+3aS+G3+tbM3vwZXCpKyG+JB/EcuYaWVjgHOIpIZBU3Bhg==",
+  "success": true,
+  "projectFilePath": "C:\\Coding-Academy\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Contracts.Admin\\DPLRef.eCommerce.Contracts.Admin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\2.2.0\\microsoft.extensions.configuration.environmentvariables.2.2.0.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\jrisseeu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

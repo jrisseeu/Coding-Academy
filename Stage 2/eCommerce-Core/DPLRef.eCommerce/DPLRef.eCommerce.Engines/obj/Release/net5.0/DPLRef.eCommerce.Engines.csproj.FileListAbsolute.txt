@@ -1,0 +1,5 @@
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Engines\obj\Release\net5.0\DPLRef.eCommerce.Engines.csproj.AssemblyReference.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Engines\obj\Release\net5.0\DPLRef.eCommerce.Engines.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Engines\obj\Release\net5.0\DPLRef.eCommerce.Engines.AssemblyInfoInputs.cache
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Engines\obj\Release\net5.0\DPLRef.eCommerce.Engines.AssemblyInfo.cs
+C:\Coding-Academy\Stage 2\eCommerce-Core\DPLRef.eCommerce\DPLRef.eCommerce.Engines\obj\Release\net5.0\DPLRef.eCommerce.Engines.csproj.CoreCompileInputs.cache

@@ -1,10 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Sprint12",
-    "\\Sprint12\\PracticeChallenge",
-    "\\Sprint12\\PracticeChallenge\\PricingEngine"
+    "\\Stage 2",
+    "\\Stage 2\\eCommerce-Core",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Contracts.BackOfficeAdmin",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Engines",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Engines\\Sales",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Tests.EngineTests",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Tests.ManagerTests",
+    "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Tests.Mocks"
   ],
-  "SelectedNode": "\\Sprint12\\PracticeChallenge\\PricingEngine\\PricingEngine.cs",
+  "SelectedNode": "\\Stage 2\\eCommerce-Core\\DPLRef.eCommerce\\DPLRef.eCommerce.Tests.EngineTests\\PricingEngineTests.cs",
   "PreviewInSolutionExplorer": false
 }

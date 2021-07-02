@@ -5,6 +5,7 @@ using DPLRef.eCommerce.Common.Contracts;
 using DPLRef.eCommerce.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Threading.Tasks;
 
 namespace DPLRef.eCommerce.Tests.AccessorTests
 {
@@ -46,6 +47,15 @@ namespace DPLRef.eCommerce.Tests.AccessorTests
 
         [TestMethod]
         [TestCategory("Accessor Tests")]
+        public async Task CatalogAccessor_FindAsync_FindNone()
+        {
+            var accessor = CreateCatalogAccessor();
+            var catalog = await accessor.FindAsync(99999);
+            Assert.IsNull(catalog);
+        }
+
+        [TestMethod]
+        [TestCategory("Accessor Tests")]
         public void CatalogAccessor_FindAllProductsForCatalog_None()
         {
             var accessor = CreateCatalogAccessor();
@@ -53,6 +63,17 @@ namespace DPLRef.eCommerce.Tests.AccessorTests
             Assert.IsNotNull(products);
             Assert.AreEqual(0, products.Length);
         }
+
+        [TestMethod]
+        [TestCategory("Accessor Tests")]
+        public async Task CatalogAccessor_FindAllProductsForCatalogAsync_None()
+        {
+            var accessor = CreateCatalogAccessor();
+            var products = await accessor.FindAllProductsForCatalogAsync(99999);
+            Assert.IsNotNull(products);
+            Assert.AreEqual(0, products.Length);
+        }
+
 
         [TestMethod]
         [TestCategory("Accessor Tests")]
@@ -97,6 +118,43 @@ namespace DPLRef.eCommerce.Tests.AccessorTests
             var loaded3 = accessor.Find(loaded.Id);
             Assert.IsNull(loaded3);
         }
+
+        [TestMethod]
+        [TestCategory("Accessor Tests")]
+        public async Task CatalogAccessor_Catalog_CRUD_Async()
+        {
+            var accessor = CreateCatalogAccessor();
+            var insertSaved = CreateCatalog();
+            Assert.IsNotNull(insertSaved);
+            Assert.IsTrue(insertSaved.Id > 0);
+            Assert.AreNotEqual("", insertSaved.SellerName);
+            Assert.IsTrue(insertSaved.IsApproved);
+            Assert.AreNotEqual("", insertSaved.Description);
+            Assert.AreNotEqual("", insertSaved.Name);
+
+            var loaded = await accessor.FindAsync(insertSaved.Id);
+            Assert.IsNotNull(loaded);
+            Assert.IsTrue(loaded.Id > 0);
+            Assert.AreEqual(insertSaved.Id, loaded.Id);
+
+            loaded.Name = "LOADED";
+            var updateSaved = accessor.SaveCatalog(loaded);
+            Assert.IsNotNull(updateSaved);
+            Assert.IsTrue(updateSaved.Id > 0);
+            Assert.IsNotNull(updateSaved.SellerName);
+            Assert.AreNotEqual("", updateSaved.SellerName);
+
+            var loaded2 = await accessor.FindAsync(loaded.Id);
+            Assert.AreEqual("LOADED", loaded2.Name);
+            Assert.IsNotNull(loaded2.SellerName);
+
+            accessor.DeleteCatalog(loaded.Id);
+
+            var loaded3 = await accessor.FindAsync(loaded.Id);
+            Assert.IsNull(loaded3);
+        }
+
+
 
 
         [TestMethod]
